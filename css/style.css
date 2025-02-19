@@ -1,15 +1,18 @@
-body, h1, h2, p, ul, li, a {
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a, table, th, td {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    border-collapse: collapse;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1d1c1c;
+    background-color: black;
 }
 
+/* Navigation Bar Styling */
 header {
     background: #2c3e50;
     padding: 15px 20px;
@@ -46,7 +49,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-size: 8px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px;
     transition: 0.3s;
@@ -57,6 +60,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Hero Section */
 .hero {
     background: url('../images/splash-bg.jpg') no-repeat center center/cover;
     height: 60vh;
@@ -69,7 +73,7 @@ nav ul li a:hover {
 }
 
 .hero-content h2 {
-    font-size: 16px;
+    font-size: 32px;
     margin-bottom: 15px;
 }
 
@@ -78,7 +82,7 @@ nav ul li a:hover {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 18px;
     transition: 0.3s;
 }
 
@@ -86,11 +90,39 @@ nav ul li a:hover {
     background: #c0392b;
 }
 
+/* Table Styling */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+thead {
+    background: #2c3e50;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+/* Footer */
 footer {
     background: #2c3e50;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-    font-size: 7px;
 }
