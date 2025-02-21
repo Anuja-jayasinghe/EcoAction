@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(227, 240, 175);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(93, 185, 150);
+    color:  rgb(227, 240, 175);
+}
+
+.volunteer-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.program-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.apply-btn {
+    background-color: rgb(93, 185, 150);
+    color: rgb(227, 240, 175);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: rgb(93, 185, 150);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(93, 185, 150);
+}
+
+footer p {
+    font-size: 18px;
+    color: rgb(227, 240, 175);
+}
+
+footer button {
+    background-color: rgb(227, 240, 175);
+    color: rgb(93, 185, 150);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: rgb(227, 240, 175);
+}
