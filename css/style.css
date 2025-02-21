@@ -9,21 +9,23 @@ body, h1, h2, p, ul, li, a, table, th, td {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #fff5e0; /* Light Cream background */
+    color: #141e46; /* Dark Blue text color */
 }
 
 /* Navigation Bar Styling */
 header {
-    background: #2c3e50;
-    padding: 15px 20px;
+    background: #f0f0f0; /* Off-white background for header */
+    padding: 10px 20px; /* Reduced padding */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto; /* Centered header */
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
 }
 
@@ -33,14 +35,15 @@ nav {
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 60px; 
+    margin-right: 5px;
 }
 
 nav ul {
     display: flex;
     gap: 20px;
-    margin-left: auto;
+    margin-inline-start: auto;
+    margin-top: 15px;
 }
 
 nav ul li {
@@ -48,17 +51,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    font-size: 16px;
+    color: #141e46; /* Dark Blue text for links */
+    font-size: 20px;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
     transition: 0.3s;
+    height: 100%;
 }
 
 nav ul li a:hover {
-    background-color: #34495e;
-    border-radius: 5px;
+    background-color: #41b06e; /* Forest Green background on hover */
 }
+nav ul li a.active {
+    background-color: #41b06e; /* Forest Green for active link */
+    color: white; /* White text color for active link */
+    font-weight: bold; /* Ensure active link stands out */
+}
+
 
 /* Hero Section */
 .hero {
@@ -68,17 +77,18 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #141e46; /* Dark Blue text */
     padding: 20px;
+    background-color: #8decb4; /* Soft Green background for hero */
 }
 
 .hero-content h2 {
-    font-size: 32px;
+    font-size: 28px; /* Reduced font size */
     margin-bottom: 15px;
 }
 
 .cta-button {
-    background: #e74c3c;
+    background: #41b06e; /* Forest Green button background */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -87,7 +97,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #c0392b;
+    background: #141e46; /* Soft Green button hover effect */
 }
 
 /* Table Styling */
@@ -104,7 +114,7 @@ table {
 }
 
 thead {
-    background: #2c3e50;
+    background: #141e46; /* Dark Blue background for table header */
     color: white;
 }
 
@@ -120,9 +130,12 @@ tr:nth-child(even) {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #141e46; /* Dark Blue footer background */
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    margin-top: auto;
+    padding: 10px 0; /* Add padding to the footer */
+    width: 100%; /* Ensure the footer spans the full width */
+    position:absolute; /* Ensure the footer is positioned correctly */
+    bottom: 0; /* Stick the footer to the bottom */
 }
