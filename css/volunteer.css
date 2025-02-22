@@ -6,10 +6,16 @@ body {
 }
 
 header {
-    text-align: center;
+    /* text-align: center;
     padding: 20px;
     background-color: rgb(93, 185, 150);
-    color:  rgb(227, 240, 175);
+    color: ; */
+    background: #f0f0f0; /* Off-white background for header */
+    padding: 10px 20px; /* Reduced padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centered header */
 }
 
 .volunteer-section {

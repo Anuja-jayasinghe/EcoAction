@@ -18,16 +18,17 @@
                 <h1>Climate Action</h1>
             </div>
             <ul>
-                <li><a href="home.html"  >Home</a></li>
+                <li><a href="../Student_2/home.html">Home</a></li>
                 <li><a href="../student_1/volunteer.html" class="active">Volunteer</a></li>
                 <li><a href="../student_2/table.html">Data</a></li>
                 <li><a href="../student_3/feedback.html">Feedback</a></li>
                 <li><a href="../student_4/profile.html">Profile</a></li>
             </ul>
         </nav>
-        <h1>Volunteer Programs</h1>
-        <p>Explore and engage in meaningful volunteer opportunities worldwide</p>
     </header>
+
+    <h1>Volunteer Programs</h1>
+    <p>Explore and engage in meaningful volunteer opportunities worldwide</p>
 
     <!-- Scrollable Information Section -->
     <section class="volunteer-section">
@@ -38,12 +39,20 @@
                 <option value="price">Price (Low to High)</option>
                 <option value="duration">Duration (Short to Long)</option>
             </select>
+
+            <label for="filter-duration">Filter by Duration:</label>
+            <select id="filter-duration" class="dropdown">
+                <option value="all">All</option>
+                <option value="2">2 Weeks</option>
+                <option value="3">3 Weeks</option>
+                <option value="4">4 Weeks</option>
+            </select>
         </div>
 
-        <div class="program-cards">
+        <div class="program-cards" id="programCards">
             <!-- Card 1 -->
-            <div class="card">
-                <img src="image" alt="Tanzania Childcare">
+            <div class="card" data-price="435" data-duration="2" data-popularity="1">
+                <img src="../images/card1.jpeg" alt="Tanzania Childcare">
                 <h3>Childcare in Arusha</h3>
                 <p>Increases access to education in low-income areas</p>
                 <p>Duration: 2 weeks | Program Fee: £435</p>
@@ -51,30 +60,30 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="card">
-                <img src="image" alt="Bali Sea Turtle Conservation">
+            <div class="card" data-price="651" data-duration="2" data-popularity="2">
+                <img src="../images/card2.jpg" alt="Bali Sea Turtle Conservation">
                 <h3>Sea Turtle Conservation in Nusa Penida</h3>
                 <p>Protects animals in the Nusa Penida region</p>
                 <p>Duration: 2 weeks | Program Fee: £651</p>
-                <button class="apply-btn"> Apply </button>
+                <button class="apply-btn">Apply</button>
             </div>
 
             <!-- Card 3 -->
-            <div class="card">
-                <img src="image" alt="Nepal Education Program">
+            <div class="card" data-price="520" data-duration="3" data-popularity="3">
+                <img src="../images/card3.jpg" alt="Nepal Education Program">
                 <h3>Education Program in Nepal</h3>
                 <p>Helps improve literacy in rural areas</p>
                 <p>Duration: 3 weeks | Program Fee: £520</p>
-                <button class="apply-btn"> Apply </button>
+                <button class="apply-btn">Apply</button>
             </div>
 
             <!-- Card 4 -->
-            <div class="card">
-                <img src="image" alt="Costa Rica Wildlife Protection">
+            <div class="card" data-price="600" data-duration="4" data-popularity="4">
+                <img src="../images/card4.jpg" alt="Costa Rica Wildlife Protection">
                 <h3>Wildlife Protection in Costa Rica</h3>
                 <p>Supports endangered species in protected forests</p>
                 <p>Duration: 4 weeks | Program Fee: £600</p>
-                <button class="apply-btn"> Apply </button>
+                <button class="apply-btn">Apply</button>
             </div>
         </div>
     </section>
@@ -83,6 +92,46 @@
         <p>&copy; 2025 G2 Sub_Group G5. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript for Filtering and Sorting -->
+    <script>
+        const sortingDropdown = document.getElementById('sorting');
+        const filterDropdown = document.getElementById('filter-duration');
+        const programCards = document.getElementById('programCards');
+        const cards = Array.from(document.querySelectorAll('.card'));
+
+        // Sorting functionality
+        sortingDropdown.addEventListener('change', () => {
+            sortAndFilterCards();
+        });
+
+        // Filtering functionality
+        filterDropdown.addEventListener('change', () => {
+            sortAndFilterCards();
+        });
+
+        function sortAndFilterCards() {
+            const sortCriteria = sortingDropdown.value;
+            const filterValue = filterDropdown.value;
+
+            let filteredCards = cards;
+
+            // Filter cards based on selected duration
+            if (filterValue !== "all") {
+                filteredCards = cards.filter(card => card.dataset.duration === filterValue);
+            }
+
+            // Sort the filtered cards
+            filteredCards.sort((a, b) => {
+                const aValue = parseInt(a.dataset[sortCriteria]);
+                const bValue = parseInt(b.dataset[sortCriteria]);
+                return aValue - bValue; // Ascending order
+            });
+
+            // Re-append sorted and filtered cards to the container
+            programCards.innerHTML = '';
+            filteredCards.forEach(card => programCards.appendChild(card));
+        }
+    </script>
+
 </body>
 </html>
-
