@@ -7,105 +7,101 @@ body, h1, h2, p, ul, li, a, table, th, td {
     border-collapse: collapse;
 }
 
+/* Apply the hero background to the entire site */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff5e0; /* Light Cream background */
+    background: url('../images/Background.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-size: cover;
     color: #141e46; /* Dark Blue text color */
 }
 
 /* Navigation Bar Styling */
 header {
-    background: #f0f0f0; /* Off-white background for header */
-    padding: 10px 20px; /* Reduced padding */
+    backface-visibility: hidden;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centered header */
+    margin: 0 auto;
+    opacity: 9.0;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
 }
 
 nav {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
+    color: white;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    z-index: 3; 
 }
 
 .logo img {
-    height: 60px; 
+    height: 60px;
     margin-right: 5px;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-inline-start: auto;
     margin-top: 15px;
-}
-
-nav ul li {
-    list-style: none;
+    z-index: 1;
 }
 
 nav ul li a {
-    color: #141e46; /* Dark Blue text for links */
-    font-size: 20px;
+    color: white;
+    font-size: 22px;
     font-weight: bold;
-    padding: 20px;
+    padding: 25px 30px;
     transition: 0.3s;
     height: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 nav ul li a:hover {
-    background-color: #41b06e; /* Forest Green background on hover */
+    background-color: #41b06e;
 }
+
 nav ul li a.active {
-    background-color: #41b06e; /* Forest Green for active link */
-    color: white; /* White text color for active link */
-    font-weight: bold; /* Ensure active link stands out */
+    background-color: #41b06e;
+    color: white;
+    font-weight: bold;
 }
 
-
-/* Hero Section */
+/* Keep the hero section the same */
 .hero {
-    background: url('../images/splash-bg.jpg') no-repeat center center/cover;
-    height: 60vh;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #141e46; /* Dark Blue text */
+    color: #141e46;
     padding: 20px;
-    background-color: #8decb4; /* Soft Green background for hero */
 }
-
-.hero-content h2 {
-    font-size: 28px; /* Reduced font size */
+#title {
+    font-weight: bold;
     margin-bottom: 15px;
-}
-
-.cta-button {
-    background: #41b06e; /* Forest Green button background */
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: 0.3s;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    
 }
-
-.cta-button:hover {
-    background: #141e46; /* Soft Green button hover effect */
-}
-
-/* Table Styling */
+/* Main Content */
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* Table Styling */
 table {
     width: 80%;
     margin: 20px auto;
@@ -114,7 +110,7 @@ table {
 }
 
 thead {
-    background: #141e46; /* Dark Blue background for table header */
+    background: #141e46;
     color: white;
 }
 
@@ -130,12 +126,11 @@ tr:nth-child(even) {
 
 /* Footer */
 footer {
-    background: #141e46; /* Dark Blue footer background */
+    background: rgba(20, 30, 70); /* Dark Blue with transparency */
     color: white;
     text-align: center;
-    margin-top: auto;
-    padding: 10px 0; /* Add padding to the footer */
-    width: 100%; /* Ensure the footer spans the full width */
-    position:absolute; /* Ensure the footer is positioned correctly */
-    bottom: 0; /* Stick the footer to the bottom */
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
