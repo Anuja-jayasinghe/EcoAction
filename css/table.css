@@ -1,0 +1,28 @@
+/* Table Specific Styles */
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+thead {
+    background: #141e46; /* Dark Blue background for table header */
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f4f4f4;
+}
