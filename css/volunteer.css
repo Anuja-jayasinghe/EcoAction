@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #f0f0f0;
+    background: rgb(30,36,71);
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ header {
 
 header h1 {
     font-size: 24px;
-    color: rgb(93, 185, 150);
+    color: rgb(30,36,71);
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -167,14 +167,6 @@ footer button:hover {
 }
 
 /* Copyright Section */
-.copyright {
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #333;
-}
-
 .copyright {
     position: fixed;
     bottom: 0;
