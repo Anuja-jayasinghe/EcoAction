@@ -1,21 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:  rgb(227, 240, 175);
+    background-color: rgb(227, 240, 175);
     margin: 0;
     padding: 0;
 }
 
 header {
-    /* text-align: center;
-    padding: 20px;
-    background-color: rgb(93, 185, 150);
-    color: ; */
-    background: #f0f0f0; /* Off-white background for header */
-    padding: 10px 20px; /* Reduced padding */
+    background: #f0f0f0;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centered header */
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Georgia;    
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .volunteer-section {
@@ -40,19 +46,46 @@ header {
     border-radius: 5px;
 }
 
-.program-cards {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 20px;
+.dropdown:focus {
+    outline: 2px solid rgb(93, 185, 150);
 }
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 15px; /* Reduced gap between cards */
+    padding: 20px;
+}
+
+/* Scrollbar Styling */
+.program-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.program-cards::-webkit-scrollbar-thumb {
+    background-color: rgb(93, 185, 150);
+    border-radius: 10px;
+}
+
+.program-cards::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
 .card {
     background-color: white;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    padding: 20px;
+    width: 90%; /* Reduced size for better fitting */
+    padding: 15px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+/* Enhanced Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -110,6 +143,36 @@ footer button {
     cursor: pointer;
 }
 
+/* Footer Button Hover */
 footer button:hover {
-    background-color: rgb(227, 240, 175);
+    background-color: rgb(93, 185, 150);
+    color: rgb(227, 240, 175);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .program-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .program-cards {
+        grid-template-columns: 1fr; /* 1 card per row on mobile */
+    }
+
+    .card {
+        width: 95%;
+    }
 }
