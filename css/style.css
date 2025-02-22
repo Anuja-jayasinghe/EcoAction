@@ -10,7 +10,7 @@ body, h1, h2, p, ul, li, a, table, th, td {
 /* Apply the hero background to the entire site */
 body {
     font-family: Arial, sans-serif;
-    background: url('../images/Background.jpg') no-repeat center center/cover;
+    /* background: url('../images/background.jpg') no-repeat center center/cover; */
     background-attachment: fixed; /* Keep the background fixed when scrolling */
     background-size: cover;
     color: #141e46; /* Dark Blue text color */
