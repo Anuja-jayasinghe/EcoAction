@@ -14,14 +14,9 @@ header {
     margin: 0 auto;
 }
 
-h1 {
+header h1 {
     font-size: 24px;
-    font-family: Georgia;    
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    color: rgb(93, 185, 150);
 }
 
 .volunteer-section {
