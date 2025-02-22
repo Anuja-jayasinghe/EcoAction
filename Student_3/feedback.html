@@ -3,227 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-    <title>Feedback - Climate Action</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f5;
-            text-align: center;
-        }
-        .container {
-            width: 50%;
-            margin: auto;
-            background: #e5e5d8;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px #aaa;
-        }
-        h2 {
-            color: #3d5c3a;
-        }
-        .required {
-            color: red;
-            font-weight: bold;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 15px;
-        }
-        input[type="text"], input[type="email"], textarea, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        .rating-group {
-        display: flex;
-        justify-content: center;
-        gap: 5px; /* Reduced gap for closer spacing */
-        margin-top: 10px;
-        }
-        .rating-group label {
-            font-weight: normal;
-        }
-        .submit-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 15px;
-            cursor: pointer;
-        }
-        .submit-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="../css/feedback.css">
 </head>
 <body>
-    <style>
-        body {
-            background-color: white;
-        }
-    </style>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="../images/logo.png" alt="Climate Logo">
-                <h1>Climate Action</h1>
-            </div>
-            <ul>
-                <li><a href="../student_2/home.html">Home</a></li>
-                <li><a href="../student_1/volunteer.html">Volunteer</a></li>
-                <li><a href="../student_2/table.html">Data</a></li>
-                <li><a href="feedback.html" class="active">Feedback</a></li>
-                <li><a href="../student_4/profile.html">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-    
     <main>
-            <div class="container">
-                <h2>Feedback Form</h2>
-                <p class="required">Required fields *</p>
-            
-                <form action="#" method="post">
-                    <!-- Name Field -->
-                    <label for="name">*Enter your name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter names here" required>
-            
-                    <!-- Email Field -->
-                    <label for="email">*Enter your email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter email here" required>
-            
-                    <!-- First Time Visiting -->
-                    <label>Was this your first time visiting?</label>
-                    <div class="radio-group">
-                        <input type="radio" id="visit_yes" name="first_time" value="Yes" required>
-                        <label for="visit_yes">Yes</label>
-            
-                        <input type="radio" id="visit_no" name="first_time" value="No">
-                        <label for="visit_no">No</label>
-                    </div>
-            
-                    <!-- Website Navigation -->
-                    <label>Was this website informative and easy to navigate through?</label>
-                    <div class="radio-group">
-                        <input type="radio" id="nav_yes" name="navigation" value="Yes" required>
-                        <label for="nav_yes">Yes</label>
-            
-                        <input type="radio" id="nav_no" name="navigation" value="No">
-                        <label for="nav_no">No</label>
-                    </div>
-            
-                    <!-- Suggestions if No -->
-                    <label for="suggestions">*If "No", suggest any improvements for the future:</label>
-                    <textarea id="suggestions" name="suggestions" placeholder="Add your message here..." rows="3"></textarea>
-            
-                    <!-- Satisfaction Rating -->
-                    <label>How satisfied are you with our services? (0 - Not satisfied, 10 - Extremely satisfied)</label>
-                    <div class="rating-group">
-                        <input type="radio" id="rating0" name="satisfaction" value="0" required>
-                        <label for="rating0">0</label>
-            
-                        <input type="radio" id="rating1" name="satisfaction" value="1">
-                        <label for="rating1">1</label>
-            
-                        <input type="radio" id="rating2" name="satisfaction" value="2">
-                        <label for="rating2">2</label>
-            
-                        <input type="radio" id="rating3" name="satisfaction" value="3">
-                        <label for="rating3">3</label>
-            
-                        <input type="radio" id="rating4" name="satisfaction" value="4">
-                        <label for="rating4">4</label>
-            
-                        <input type="radio" id="rating5" name="satisfaction" value="5">
-                        <label for="rating5">5</label>
-            
-                        <input type="radio" id="rating6" name="satisfaction" value="6">
-                        <label for="rating6">6</label>
-            
-                        <input type="radio" id="rating7" name="satisfaction" value="7">
-                        <label for="rating7">7</label>
-            
-                        <input type="radio" id="rating8" name="satisfaction" value="8">
-                        <label for="rating8">8</label>
-            
-                        <input type="radio" id="rating9" name="satisfaction" value="9">
-                        <label for="rating9">9</label>
-            
-                        <input type="radio" id="rating10" name="satisfaction" value="10">
-                        <label for="rating10">10</label>
-                    </div>
-            
-                    <!-- Recommendation -->
-                    <label>Would you recommend our services?</label>
-                    <div class="radio-group">
-                        <input type="radio" id="recommend_yes" name="recommend" value="Yes" required>
-                        <label for="recommend_yes">Yes</label>
-            
-                        <input type="radio" id="recommend_no" name="recommend" value="No">
-                        <label for="recommend_no">No</label>
-                    </div>
-            
-                    <!-- Subscription -->
-                    <label>*Would you like to receive updates about the website and any offers?</label>
-                    <select name="updates" required>
-                        <body>
+        <h1>Feedback Form</h1>
+        <form action="#" method="post">
+            <!--Personal Details-->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-                            <div class="container">
-                                <h2>Feedback Form</h2>
-                                <p class="required">Required fields *</p>
-                            
-                                <form action="#" method="post">
-                                    <!-- Name Field -->
-                                    <label for="name">*Enter your name:</label>
-                                    <input type="text" id="name" name="name" placeholder="Enter names here" required>
-                            
-                                    <!-- Email Field -->
-                                    <label for="email">*Enter your email:</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter email here" required>
-                            
-                                    <!-- First Time Visiting -->
-                                    
-                            
-                                    <!-- Recommendation -->
-                                    <label>Would you recommend our services?</label>
-                                    <div class="radio-group">
-                                        <input type="radio" id="recommend_yes" name="recommend" value="Yes" required>
-                                        <label for="recommend_yes">Yes</label>
-                            
-                                        <input type="radio" id="recommend_no" name="recommend" value="No">
-                                        <label for="recommend_no">No</label>
-                                    </div>
-                            
-                                    <!-- Subscription -->
-                                    <label>*Would you like to receive updates about the website and any offers?</label>
-                                    <select name="updates" required>
-                                        <option value="Yes - via Email">Yes - via Email</option>
-                                        <option value="Yes - via SMS">Yes - via SMS</option>
-                                        <option value="No">No</option>
-                                    </select>
-                            
-                                    <!-- Additional Requests -->
-                                    <label for="requests">Do you have any additional questions or requests?</label>
-                                    <textarea id="requests" name="requests" placeholder="Add your message here..." rows="3"></textarea>
-                            
-                                    <!-- Submit Button -->
-                                    <button type="submit" class="submit-btn">Submit</button>
-                                </form>
-                            </div>
-                            
-                            
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+
+                <label for="telephone">Telephone Number:</label>
+                <input  type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required title="Please enter a 10 digit phone number.">
+
+                <label for="address">Address:</label>
+                <textarea type="address" id="address" name="address" rows="3" maxlength="200" title="Enter your address."></textarea>
+            </fieldset>
+
+            <!--Feedback Section-->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="comment">Comment or Message:</label>
+                <textarea id="comment" name="comment" rows="4" maxlength="250"
+                    oninput="charCount.textContent=(250-this.value.length)+'characters reamaining'"></textarea>
+                <p id="char-count">250 characters remaining</p>
+
+                <label for="rating">Rate Our Efforts</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excellent"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Fair"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Poor"></label>  
+                </div>
+
+                <label>Would you recommend our services?</label>
+                <input type="radio" id="yes" name="recommend" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label>
+        
+            </fieldset>
+
+            <!--Additional Inputs-->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="preference">How did you hear about us?</label>
+                <select id="preference" name="preference">
+                    <option value="web">Website</option>
+                    <option value="friend">Friend</option>
+                    <option value="ad">Advertisement</option>
+                </select>
+
+                <label for="date">Date of Feedback</label>
+                <input type="datetime-local" id="date" name="date">
+
+                <label for="file">Upload Documents (Optional):</label>
+                <input type="file" id="file" name="file">
+            </fieldset>
+
+            <button type="submit">Submit</button>
+
+        </form>
     </main>
-    
     <footer>
-        <p>&copy; 2025 G2 Sub_Group G5. All Rights Reserved.</p>
+        <p><a href="#">Visit our 3-page editor</a></p>
     </footer>
+    
 </body>
 </html>

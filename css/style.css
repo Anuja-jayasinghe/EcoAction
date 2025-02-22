@@ -131,6 +131,56 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: absolute;
     bottom: 0;
+
+}
+.tiles-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.tile {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.tile img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tile h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.tile p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tile-button {
+    display: inline-block;
+    background: #41b06e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.tile-button:hover {
+    background: #141e46;
 }
