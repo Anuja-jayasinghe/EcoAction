@@ -15,74 +15,158 @@
         <nav>
             <div class="logo">
                 <img src="../images/mainLogo.png" alt="Climate Logo">
-                <a href="home.html"> <h1 >Climate Action</h1></a>
+                <a href="home.html"> <h1>Climate Action</h1></a>
             </div>
             <ul>
-                <li><a href="../Student_2/home.html"  >Home</a></li>
+                <li><a href="../Student_2/home.html">Home</a></li>
                 <li><a href="../student_1/volunteer.html" class="active">Volunteer</a></li>
                 <li><a href="../student_2/table.html">Data</a></li>
                 <li><a href="../student_3/feedback.html">Feedback</a></li>
                 <li><a href="../student_4/profile.html">Profile</a></li>
             </ul>
         </nav>
-        <h1>Volunteer Programs</h1>
-        <p>Explore and engage in meaningful volunteer opportunities worldwide</p>
+        
     </header>
 
     <!-- Scrollable Information Section -->
     <section class="volunteer-section">
-        <div class="filters">
+        <section id="climate-action-volunteer" class="info-box">
+            <h1>Volunteer for Climate Action</h1>
+            <p>Join our programs to fight climate change through environmental conservation, renewable energy, wildlife protection, and sustainable farming.</p>
+            
+            <h2>Why Volunteer?</h2>
+            <p>Help address the urgent impacts of climate change and gain valuable sustainability experience.</p>
+            
+            <h2>Our Projects:</h2>
+            <ul>
+                <li><strong>Environmental Conservation</strong>: Reforestation and habitat restoration.</li>
+                <li><strong>Wildlife & Marine Conservation</strong>: Protect endangered species.</li>
+                <li><strong>Regenerative Agriculture</strong>: Support sustainable farming.</li>
+                <li><strong>Renewable Energy</strong>: Provide clean energy solutions.</li>
+                <li><strong>Climate Education</strong>: Raise awareness and promote eco-friendly practices.</li>
+            </ul>
+            
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Direct Impact</strong>: Tackle climate change where it's needed most.</li>
+                <li><strong>Cultural Exchange</strong>: Experience new cultures and perspectives.</li>
+                <li><strong>Sustainable Travel</strong>: Eco-friendly travel with B-Corp certification.</li>
+                <li><strong>Support Communities</strong>: Amplify grassroots organizations' efforts.</li>
+            </ul>
+            
+            <h2>Take Action</h2>
+            <p>Join us today for a sustainable tomorrow.</p>
+        </section>
+
+          <div class="filters">
             <label for="sorting">Sort by:</label>
             <select id="sorting" class="dropdown">
                 <option value="popularity">Most Popular</option>
                 <option value="price">Price (Low to High)</option>
                 <option value="duration">Duration (Short to Long)</option>
             </select>
+
+            <label for="filter-duration">Filter by Duration:</label>
+            <select id="filter-duration" class="dropdown">
+                <option value="all">All</option>
+                <option value="2">2 Weeks</option>
+                <option value="3">3 Weeks</option>
+                <option value="4">4 Weeks</option>
+                <option value="5">5 Weeks</option>
+                <option value="6">6 Weeks</option>
+                <option value="10">10 Weeks</option>
+                <option value="12">12 Weeks</option>
+                <option value="15">15 Weeks</option>
+                <option value="20">20 Weeks</option>
+            </select>
         </div>
+          
 
-        <div class="program-cards">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="image" alt="Tanzania Childcare">
-                <h3>Childcare in Arusha</h3>
-                <p>Increases access to education in low-income areas</p>
-                <p>Duration: 2 weeks | Program Fee: £435</p>
-                <button class="apply-btn">Apply</button>
+        <div class="program-cards" id="programCards">
+            <!-- Cards will be dynamically sorted and filtered here -->
+            <div class="card" data-price="1045" data-duration="3" data-popularity="3">
+                <img src="../images/card1.jpg" alt="Marine Conservation">
+                <h3>Marine Conservation</h3>
+                <p>Protect & preserve precious marine life</p>
+                <p>Duration: 3 weeks | Program Fee: $1045</p>
             </div>
-
-            <!-- Card 2 -->
-            <div class="card">
-                <img src="image" alt="Bali Sea Turtle Conservation">
-                <h3>Sea Turtle Conservation in Nusa Penida</h3>
-                <p>Protects animals in the Nusa Penida region</p>
-                <p>Duration: 2 weeks | Program Fee: £651</p>
-                <button class="apply-btn"> Apply </button>
+            <div class="card" data-price="1430" data-duration="12" data-popularity="4">
+                <img src="../images/card2.jpg" alt="Environmental Conservation">
+                <h3>Environmental Conservation</h3>
+                <p>Conserve unique & fragile ecosystems</p>
+                <p>Duration: 12 weeks | Program Fee: $1430</p>
             </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="image" alt="Nepal Education Program">
-                <h3>Education Program in Nepal</h3>
-                <p>Helps improve literacy in rural areas</p>
-                <p>Duration: 3 weeks | Program Fee: £520</p>
-                <button class="apply-btn"> Apply </button>
+            <div class="card" data-price="1645" data-duration="10" data-popularity="5">
+                <img src="../images/card3.jpg" alt="Climate Action">
+                <h3>Climate Action</h3>
+                <p>Help tackle climate change</p>
+                <p>Duration: 10 weeks | Program Fee: $1645</p>
             </div>
-
-            <!-- Card 4 -->
-            <div class="card">
-                <img src="image" alt="Costa Rica Wildlife Protection">
-                <h3>Wildlife Protection in Costa Rica</h3>
-                <p>Supports endangered species in protected forests</p>
-                <p>Duration: 4 weeks | Program Fee: £600</p>
-                <button class="apply-btn"> Apply </button>
+            <div class="card" data-price="2740" data-duration="5" data-popularity="10">
+                <img src="../images/card4.jpg" alt="Horse Care Volunteer Project">
+                <h3>Therapeutic Horse Care Volunteer Project</h3>
+                <p>Protect the planet & preserve nature</p>
+                <p>Duration: 5 weeks | Program Fee: $2740</p>
+            </div>
+            <div class="card" data-price="2535" data-duration="6" data-popularity="3">
+                <img src="../images/card5.jpg" alt="Forest Conservation">
+                <h3>Forest Conservation</h3>
+                <p>Protect the planet</p>
+                <p>Duration: 6 weeks | Program Fee: $2535</p>
+            </div>
+            <div class="card" data-price="5460" data-duration="20" data-popularity="8">
+                <img src="../images/card6.jpg" alt="Agriculture Conservation">
+                <h3>Agriculture Conservation</h3>
+                <p>Promote sustainable farming practices</p>
+                <p>Duration: 20 weeks | Program Fee: $5460</p>
+            </div>
+            <div class="card" data-price="545" data-duration="4" data-popularity="5">
+                <img src="../images/card7.jpg" alt="Eco-Agriculture Conservation">
+                <h3>Eco-Agriculture Conservation</h3>
+                <p>Promote sustainable farming</p>
+                <p>Duration: 4 weeks | Program Fee: $545</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 G2 Sub_Group G5. All Rights Reserved.</p>
-    </footer>
+    <div class="copyright">
+        &copy; 2025 Your Company Name. All rights reserved.
+    </div>
+
+    <!-- JavaScript for Filtering and Sorting -->
+    <script>
+        const sortingDropdown = document.getElementById('sorting');
+        const filterDropdown = document.getElementById('filter-duration');
+        const programCards = document.getElementById('programCards');
+        const cards = Array.from(document.querySelectorAll('.card'));
+
+        // Event Listeners
+        sortingDropdown.addEventListener('change', sortAndFilterCards);
+        filterDropdown.addEventListener('change', sortAndFilterCards);
+
+        function sortAndFilterCards() {
+            const sortCriteria = sortingDropdown.value;
+            const filterValue = filterDropdown.value;
+
+            let filteredCards = cards;
+
+            // Filter cards based on duration
+            if (filterValue !== "all") {
+                filteredCards = cards.filter(card => card.dataset.duration === filterValue);
+            }
+
+            // Sort the filtered cards
+            filteredCards.sort((a, b) => {
+                const aValue = parseInt(a.dataset[sortCriteria]);
+                const bValue = parseInt(b.dataset[sortCriteria]);
+                return aValue - bValue;
+            });
+
+            // Clear and update the program cards section
+            programCards.innerHTML = '';
+            filteredCards.forEach(card => programCards.appendChild(card));
+        }
+    </script>
 
 </body>
 </html>
-

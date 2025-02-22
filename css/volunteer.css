@@ -1,21 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:  rgb(227, 240, 175);
+    background-color: rgb(204, 224, 225);
     margin: 0;
     padding: 0;
 }
 
 header {
-    /* text-align: center;
-    padding: 20px;
-    background-color: rgb(93, 185, 150);
-    color: ; */
-    background: #f0f0f0; /* Off-white background for header */
-    padding: 10px 20px; /* Reduced padding */
+    background: rgb(30,36,71);
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centered header */
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    color: rgb(30,36,71);
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .volunteer-section {
@@ -28,9 +32,16 @@ header {
 
 .filters {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 20px;
+}
+
+.filters label {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
 }
 
 .dropdown {
@@ -38,33 +49,68 @@ header {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+.dropdown:focus {
+    outline: 2px solid rgb(93, 185, 150);
+    border-color: rgb(93, 185, 150);
 }
 
 .program-cards {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 15px;
+    padding: 20px;
 }
+
+.program-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.program-cards::-webkit-scrollbar-thumb {
+    background-color: rgb(93, 185, 150);
+    border-radius: 10px;
+}
+
+.program-cards::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
 .card {
     background-color: white;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    padding: 20px;
+    width: 90%; /* Reduced size for better fitting */
+    padding: 15px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.card img:hover {
+    opacity: 0.9;
 }
 
 .card h3 {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
+    font-weight: bold;
 }
 
 .card p {
@@ -82,6 +128,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+    width: 100%;
 }
 
 .apply-btn:hover {
@@ -93,6 +140,8 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: rgb(93, 185, 150);
+    position: relative;
+    z-index: 100;
 }
 
 footer p {
@@ -108,8 +157,134 @@ footer button {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 footer button:hover {
-    background-color: rgb(227, 240, 175);
+    background-color: rgb(93, 185, 150);
+    color: rgb(227, 240, 175);
+    transform: scale(1.05);
+}
+
+/* Copyright Section */
+.copyright {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Centered Content for #climate-action-volunteer */
+#climate-action-volunteer {
+    background: rgba(255, 255, 255, 0.6); /* Transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px; /* Max width for centering */
+    text-align: center; /* Center the text */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+#climate-action-volunteer h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Section Titles */
+#climate-action-volunteer h2 {
+    font-size: 1.8em;
+    color: #27ae60;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+#climate-action-volunteer p {
+    text-align: center;  /* Center the text */
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+#climate-action-volunteer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#climate-action-volunteer ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+#climate-action-volunteer strong {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    #climate-action-volunteer {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    #climate-action-volunteer h1 {
+        font-size: 2em;
+    }
+
+    #climate-action-volunteer h2 {
+        font-size: 1.5em;
+    }
+
+    #climate-action-volunteer p, #climate-action-volunteer ul li {
+        font-size: 1em;
+    }
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+@media (max-width: 1024px) {
+    .program-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .program-cards {
+        grid-template-columns: 1fr; /* 1 card per row on mobile */
+    }
+
+    .card {
+        width: 95%;
+    }
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
