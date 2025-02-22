@@ -165,7 +165,97 @@ footer button:hover {
     font-size: 0.9rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
+.intro-text {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-out;
+}
 
+/* Background Styling */
+#climate-action-volunteer {
+    background: rgba(255, 255, 255, 0.85); /* Transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+#climate-action-volunteer h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Section Titles */
+#climate-action-volunteer h2 {
+    font-size: 1.8em;
+    color: #27ae60;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+#climate-action-volunteer p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+#climate-action-volunteer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#climate-action-volunteer ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Strong Text for Key Areas */
+#climate-action-volunteer strong {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    #climate-action-volunteer {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    #climate-action-volunteer h1 {
+        font-size: 2em;
+    }
+
+    #climate-action-volunteer h2 {
+        font-size: 1.5em;
+    }
+
+    #climate-action-volunteer p, #climate-action-volunteer ul li {
+        font-size: 1em;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* Responsive Design for Smaller Screens */
 @media (max-width: 1024px) {
     .program-cards {
