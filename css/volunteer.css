@@ -40,7 +40,7 @@ header h1 {
 
 .filters label {
     font-size: 1.2em;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -168,7 +168,7 @@ footer button:hover {
 
 /* Copyright Section */
 .copyright {
-    position: fixed;
+    position: relative; /* Changed from fixed to relative */
     bottom: 0;
     width: 100%;
     background-color: #f1f1f1;
@@ -176,6 +176,7 @@ footer button:hover {
     padding: 10px 0;
     font-size: 0.9rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add some margin to separate from content */
 }
 
 .intro-text {
@@ -238,6 +239,32 @@ footer button:hover {
 #climate-action-volunteer strong {
     color: #2980b9;
     font-weight: bold;
+}
+
+/* Apply Button Styling */
+.apply-btn {
+    background-color: rgb(93, 185, 150);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply-btn:hover {
+    background-color: rgb(75, 160, 130);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.apply-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design for Small Screens */
