@@ -124,15 +124,47 @@ tr:nth-child(even) {
     background: #f4f4f4;
 }
 
-/* Footer */
 footer {
-    background: rgba(20, 30, 70); /* Dark Blue with transparency */
-    color: white;
     text-align: center;
     padding: 20px;
-    width: 100%;
+    background-color: rgb(93, 185, 150);
     position: relative;
+    z-index: 100;
+}
+
+footer p {
+    font-size: 18px;
+    color: rgb(227, 240, 175);
+}
+
+footer button {
+    background-color: rgb(227, 240, 175);
+    color: rgb(93, 185, 150);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer button:hover {
+    background-color: rgb(93, 185, 150);
+    color: rgb(227, 240, 175);
+    transform: scale(1.05);
+}
+
+/* Copyright Section */
+.copyright {
+    position: relative; /* Changed from fixed to relative */
     bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add some margin to separate from content */
 }
 /* General styles */
 body {
@@ -216,4 +248,37 @@ header nav ul li a.active {
 }
 .cta-button:hover {
     background-color: #141E46;
+}
+.content-tiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: white;
+    padding: 15px;
+    height: 500px;
+}
+
+.tile img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: rgba(19, 160, 38, 0.884);
 }

@@ -136,48 +136,7 @@ header h1 {
     transform: scale(1.05);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(93, 185, 150);
-    position: relative;
-    z-index: 100;
-}
 
-footer p {
-    font-size: 18px;
-    color: rgb(227, 240, 175);
-}
-
-footer button {
-    background-color: rgb(227, 240, 175);
-    color: rgb(93, 185, 150);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-footer button:hover {
-    background-color: rgb(93, 185, 150);
-    color: rgb(227, 240, 175);
-    transform: scale(1.05);
-}
-
-/* Copyright Section */
-.copyright {
-    position: relative; /* Changed from fixed to relative */
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Add some margin to separate from content */
-}
 
 .intro-text {
     text-align: center;
