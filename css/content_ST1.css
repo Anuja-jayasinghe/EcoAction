@@ -1,0 +1,9 @@
+/* content_ST1.css */
+.container {
+    background-color: rgba(255, 255, 255, 0.6);  /* White background */
+    padding: 20px;            /* Padding inside the box */
+    border: 2px solid #ffffff; /* Dark blue border around the box */
+    border-radius: 15px;      /* Rounded corners for the box */
+    margin: 20px auto;        /* Center the box with margin */
+    max-width: 1000px;        /* Limit the width of the content */
+}
