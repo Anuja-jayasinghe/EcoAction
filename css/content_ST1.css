@@ -1,9 +1,57 @@
-/* content_ST1.css */
+/* Centered Content for #climate-action-volunteer */
 .container {
-    background-color: rgba(255, 255, 255, 0.6);  /* White background */
-    padding: 20px;            /* Padding inside the box */
-    border: 2px solid #ffffff; /* Dark blue border around the box */
-    border-radius: 15px;      /* Rounded corners for the box */
-    margin: 20px auto;        /* Center the box with margin */
-    max-width: 1000px;        /* Limit the width of the content */
+    background: rgba(255, 255, 255, 0.6); /* Transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px; /* Max width for centering */
+    text-align: center; /* Center the text */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.container h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Section Titles */
+.container h2 {
+    font-size: 1.8em;
+    color: #27ae60;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+.container h3 {
+    font-size: 1.6em;
+    color: #22096e;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+.container p {
+    text-align: center;  /* Center the text */
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+#image-placeholder img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+#image-placeholder img:hover {
+    opacity: 0.9;
 }
