@@ -45,15 +45,18 @@
     color: #192735;
     margin-bottom: 15px;
 }
-.image-placeholder1 {
-    height: 500px;
+
+.image-placeholder img {
     width: 100%;
-    overflow: hidden;
+    height: auto;
     border-radius: 5px;
     transition: opacity 0.3s ease;
-    object-fit: fill;
 }
 
-#image-placeholder img:hover {
-    opacity: 0.9;
+#image1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
 }
