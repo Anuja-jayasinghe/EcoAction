@@ -58,3 +58,15 @@
     justify-content: center;
     align-items: center;
 }
+.image-placeholder1 img {
+    object-fit: cover; /* Ensures the full image is shown within the container */
+    height: 50%;
+    width: 50%; /* Reduced from 80% to 40% */
+    overflow: hidden;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    margin: 0 auto; /* Center the image */
+    display: flex; /* Center the image inside the container */
+    justify-content: center;
+    align-items: center;
+}
