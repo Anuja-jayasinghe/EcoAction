@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Life Below Water</title>
+    <link rel="stylesheet" href="../css/useprofile.css">
+</head>
+<body>
+    <header>
+        <h1>Life Below Water - User Profile</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="form-title">User Profile Information</h2>
+        <form id="profile-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="volunteer">Have you volunteered before?</label>
+                <select id="volunteer">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="volunteer-description">Describe your experience:</label>
+                <textarea id="volunteer-description"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Select your skills:</label>
+                <select id="skills" multiple>
+                    <option value="scuba diving">Scuba Diving</option>
+                    <option value="marine biology">Marine Biology</option>
+                    <option value="ocean cleanup">Ocean Cleanup</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">Availability (Hours per week):</label>
+                <input type="number" id="availability" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Why do you want to join?</label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Life Below Water | User Profile Form</p>
+    </footer>
+</body>
+</html>
+
