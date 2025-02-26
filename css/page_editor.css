@@ -1,44 +1,196 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(204, 224, 225);
+/* Student Profile CSS */
+.profile-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section {
+    padding: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-section:last-child {
+    border-bottom: none;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #141e46, #41b06e);
+    color: white;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+    border-bottom: none;
+}
+
+.role-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+.profile-section h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #141e46;
+    border-bottom: none;
+}
+
+.profile-section h3 i {
+    margin-right: 10px;
+    color: #41b06e;
+}
+
+/* Icon placeholders - replace with actual icons if available */
+.icon-tasks::before {
+    content: "📋 ";
+}
+
+.icon-code::before {
+    content: "💻 ";
+}
+
+.icon-challenge::before {
+    content: "🧩 ";
+}
+
+.icon-accessibility::before {
+    content: "♿ ";
+}
+
+.icon-reference::before {
+    content: "📚 ";
+}
+
+.task-list {
     margin: 0;
     padding: 0;
 }
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255,0.6);
+
+.task-list li {
+    margin: 10px 0;
+}
+
+.task-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f5f5f5;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-section {
-    margin-bottom: 20px;
-}
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-ul li {
-    margin: 5px 0;
-}
-ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: #333;
+    transition: background-color 0.2s ease;
 }
-ul li a:hover {
-    text-decoration: underline;
+
+.task-link:hover {
+    background-color: #e9e9e9;
 }
-footer {
-    text-align: center;
-    padding: 1em;
-    background: #333;
+
+.task-status {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.task-status.completed {
+    background-color: #41b06e;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+.tech-details {
+    margin-top: 15px;
+}
+
+.tech-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tech-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card h4 {
+    margin-top: 0;
+    color: #41b06e;
+}
+
+.challenges {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.challenge-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s ease;
+}
+
+.challenge-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }

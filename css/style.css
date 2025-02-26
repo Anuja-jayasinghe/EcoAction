@@ -125,47 +125,68 @@ tr:nth-child(even) {
 }
 
 /* Footer Styles */
-footer {
-    background-color: rgb(30, 36, 71); /* Matches header */
+.footer {
+    background-color: #000000;
     color: white;
-    padding: 20px 0;
-    margin-top: auto; /* Pushes footer to bottom if needed */
+padding-top: 10px;
+    font-size: 16px;
     text-align: center;
 }
-
-.footer-content {
+#footer-text {
+    color: white;}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.editor-links {
-    margin: 10px 0;
-}
-
-.editor-links a {
-    color: #41b06e;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-}
-
-.editor-links a:hover {
-    text-decoration: underline;
-}
-
-/* Copyright Section */
-.copyright {
-    position: relative; /* Changed from fixed to relative */
-    bottom: 0;
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Add some margin to separate from content */
 }
+
+.link-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.link-section h4 {
+    border-bottom: 2px solid #41b06e;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.link-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-section ul li {
+    margin: 5px 0;
+}
+
+.link-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-section ul li a:hover {
+    color: #41b06e;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
