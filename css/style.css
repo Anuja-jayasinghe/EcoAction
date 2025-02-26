@@ -124,34 +124,34 @@ tr:nth-child(even) {
     background: #f4f4f4;
 }
 
+/* Footer Styles */
 footer {
+    background-color: rgb(30, 36, 71); /* Matches header */
+    color: white;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to bottom if needed */
     text-align: center;
-    padding: 20px;
-    background-color: rgb(93, 185, 150);
-    position: relative;
-    z-index: 100;
 }
 
-footer p {
-    font-size: 18px;
-    color: rgb(227, 240, 175);
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-footer button {
-    background-color: rgb(227, 240, 175);
-    color: rgb(93, 185, 150);
-    border: none;
-    padding: 10px 20px;
+.editor-links {
+    margin: 10px 0;
+}
+
+.editor-links a {
+    color: #41b06e;
+    text-decoration: none;
+    margin: 0 15px;
     font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
 }
 
-footer button:hover {
-    background-color: rgb(93, 185, 150);
-    color: rgb(227, 240, 175);
-    transform: scale(1.05);
+.editor-links a:hover {
+    text-decoration: underline;
 }
 
 /* Copyright Section */
