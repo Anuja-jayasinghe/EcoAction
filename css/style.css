@@ -17,63 +17,70 @@ body {
 }
 
 /* Navigation Bar Styling */
+/* Updated Header Styles */
 header {
-    backface-visibility: hidden;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    opacity: 9.0;
-    background: rgb(30,36,71); /* Semi-transparent overlay */
+    top: 0;
+    width: 100%;
+    background: rgba(30, 36, 71, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    color: white;
-}
 
 .logo {
-    display: flex;
-    align-items: center;
-    z-index: 3; 
+    transition: transform 0.3s ease;
 }
 
-.logo img {
-    height: 60px;
-    margin-right: 5px;
+.logo:hover {
+    transform: scale(1.05);
 }
 
-nav ul {
-    display: flex;
-    gap: 30px;
-    margin-inline-start: auto;
-    margin-top: 15px;
-    z-index: 1;
+.logo h1 {
+    font-size: 2.2rem !important;
+    background: linear-gradient(60deg, #000000, #4b613c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease;
+}
+
+.logo:hover h1 {
+    text-shadow: 0 0 15px rgba(65, 176, 110, 0.4);
 }
 
 nav ul li a {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 25px 30px;
-    transition: 0.3s;
-    height: 100%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    position: relative;
+    padding: 15px 25px !important;
+    border-radius: 30px !important;
+    overflow: hidden;
 }
 
-nav ul li a:hover {
-    background-color: #41b06e;
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #8decb4;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 70%;
 }
 
 nav ul li a.active {
-    background-color: #41b06e;
-    color: white;
-    font-weight: bold;
+    background: rgba(65, 176, 110, 0.2) !important;
+    border: 2px solid #41b06e;
+}
+
+nav ul li a:hover {
+    background: rgba(65, 176, 110, 0.1) !important;
 }
 
 /* Keep the hero section the same */
