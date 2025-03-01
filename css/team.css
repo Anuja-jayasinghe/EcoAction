@@ -1,32 +1,18 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-header{
-    background-color: #a00;
-    color: white;
-    padding: 15px;
-}
-
-main{
-    padding: 20px;
-}
-
 .team-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
-
+    min-height: 80vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-wrap: wrap;
 }
 
 .team-member{
     position: relative;
-    width: 220px;
-    height: 300px;
+    width: 250px;
+    height: 400px;
     text-align: center;
     cursor: pointer;
     border-radius: 10px;
@@ -36,44 +22,80 @@ main{
     transition: transform 0.3s ease-in-out;
 }
 
-.thumbnail{
+.team-member:hover{
+    transform: scale(1.1);
+}
+
+.team-member:hover .thumbnail{
+    opacity: 0.7;
+    border: 3px solid #41B06E;
+}
+
+.team-member .thumbnail{
     width: 100%;
     height: 260px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,border 0.3s;
-}
-
-.team-member:hover.thumbnail{
-    transform: scale(1.1);
-    opacity: 0.7;
-    border: 3px solid #a00;
+    transition: transform 0.3s ease-in-out,opacity 0.3s ease-in-out;
 }
 
 .details{
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(20px);
     width: 90%;
     background: rgba(255,255,255,0.9);
     padding: 10px;
-    border-radius:10px;
+    border-radius: 10px;
     text-align: left;
-    display: none;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     z-index: 1;
-    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease,transform 0.3s ease,visibility 0.3s ease;
 }
 
-.team-member:focus.details,
-.team-member:active.details{
-    display: block;
+.team-member:hover .details{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.team-member:focus .details{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
 }
 
 footer{
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #a00;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
     color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h2{
+    color: lightyellow;
+    font-size: 40px;
+    font-family: sans-serif;
+    }
+
+p{
+    color: lightyellow;
+    font-size: 20px;
+    font-family: sans-serif;
 }

@@ -1,132 +1,57 @@
-/* table.css - Soft Futuristic Theme Update */
-
-/* Base table styling */
 table {
-    background: linear-gradient(145deg, #0d1a26, #1a2a3a);
-    border: 1px solid rgba(109, 227, 185, 0.3);
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    box-shadow: 0 0 40px rgba(109, 227, 185, 0.05),
-                0 10px 30px rgba(0, 0, 0, 0.2);
-    --soft-teal: #6de3b9;
-    --soft-cyan: #8ad2f4;
-    --soft-lavender: #b19cd9;
+    overflow: hidden;
 }
 
-/* Header styling */
-.table-header {
-    background: linear-gradient(45deg, #1a2a3a, #223344) !important;
-    border-bottom: 2px solid rgba(109, 227, 185, 0.4);
-    color: #d1f0e6;
-    text-shadow: 0 0 12px rgba(109, 227, 185, 0.15);
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
-.table-logo {
-    filter: drop-shadow(0 0 6px rgba(109, 227, 185, 0.2));
-    animation: soft-pulse 2s infinite alternate;
+th {
+    background: #8decb4;
+    color: #141e46;
+    font-weight: bold;
 }
 
-@keyframes soft-pulse {
-    0% { opacity: 0.9; transform: scale(1); }
-    100% { opacity: 1; transform: scale(1.02); }
+tbody tr:nth-child(even) {
+    background: #e3fcef;
 }
 
-/* Column headers */
-.column-headers th {
-    background: rgba(26, 42, 58, 0.4) !important;
-    border-bottom: 1px solid rgba(138, 210, 244, 0.3);
-    color: #c3e8f7;
-    font-weight: 500;
+tbody tr:hover {
+    background: rgba(65, 176, 110, 0.2);
+    transition: 0.3s;
 }
 
-.column-headers th::after {
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(109, 227, 185, 0.3) 50%, 
-        transparent 100%);
+.icon {
+    font-size: 22px;
+    margin-left: 5px;
+    color: #41b06e;
+    border: 2px solid #41b06e;
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
 }
 
-/* Data cells */
-td {
-    color: #e8f4fc;
-    border-bottom: 1px solid rgba(138, 210, 244, 0.1);
-}
-
-.data-row:hover td {
-    background: rgba(34, 51, 68, 0.2) !important;
-    transform: translateX(5px);
-}
-
-/* Zebra rows */
-.data-row:nth-child(4n+1),
-.data-row:nth-child(4n+2) {
-    background: linear-gradient(90deg,
-        rgba(26, 42, 58, 0.1) 0%,
-        rgba(34, 51, 68, 0.15) 50%,
-        rgba(26, 42, 58, 0.1) 100%);
-}
-
-/* Trend indicators */
-.trend-up {
-    color: #ffa7b5;
-    text-shadow: 0 0 8px rgba(255, 167, 181, 0.1);
-}
-
-.trend-down {
-    color: #6de3b9;
-    text-shadow: 0 0 8px rgba(109, 227, 185, 0.1);
-}
-
-/* Details links */
-.details-row a {
-    background: rgba(34, 51, 68, 0.3);
-    border: 1px solid rgba(138, 210, 244, 0.2);
-    color: #8ad2f4;
-}
-
-.details-row a:hover {
-    background: rgba(138, 210, 244, 0.1);
-    box-shadow: 0 0 12px rgba(138, 210, 244, 0.1);
-}
-
-/* Footer styling */
-tfoot td {
-    background: linear-gradient(45deg, 
-        rgba(26, 42, 58, 0.8), 
-        rgba(34, 51, 68, 0.8));
-    border-top: 2px solid rgba(109, 227, 185, 0.3);
-}
-
-/* Legend styling */
-.table-legend {
-    background: rgba(26, 42, 58, 0.8);
-    border: 1px solid rgba(138, 210, 244, 0.3);
-    color: #d1e7f4;
-}
-
-/* Grid overlay */
-.data-table::before {
-    background: 
-        linear-gradient(90deg, 
-            transparent 49%, 
-            rgba(109, 227, 185, 0.02) 50%, 
-            transparent 51%),
-        linear-gradient(180deg, 
-            transparent 49%, 
-            rgba(109, 227, 185, 0.02) 50%, 
-            transparent 51%);
-    opacity: 0.2;
-}
-
-/* Icons styling */
-.fa-industry { color: #ffa7b5; }
-.fa-check-circle { color: #6de3b9; }
-.fa-exclamation-triangle { color: #ffa7b5; }
-.fa-water { color: #8ad2f4; }
-.fa-solar-panel { color: #ffe08a; }
-
-/* Tooltips */
-.tooltip .tooltiptext {
-    background: rgba(34, 51, 68, 0.95);
-    border: 1px solid rgba(109, 227, 185, 0.3);
-    color: #d1f0e6;
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+        padding: 12px;
+    }
 }
