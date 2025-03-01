@@ -21,7 +21,7 @@ body {
 header {
     top: 0;
     width: 100%;
-    background: rgba(30, 36, 71, 0.95);
+    background: rgba(92, 98, 133, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px 0;
     z-index: 1000;
@@ -48,7 +48,7 @@ header {
 }
 
 .logo:hover h1 {
-    text-shadow: 0 0 15px rgba(65, 176, 110, 0.4);
+    text-shadow: 0 0 15px rgba(29, 122, 67, 0.4);
 }
 
 nav ul li a {
