@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="../css/team.css">
+
+
+</head>
+<body>
+    
+    <main>
+        <h2>Student Details</h2>
+        <p>Learn about the Team!</p>
+
+        <div class="team-container">
+            <div class="team-member" tabindex="0" onclick="showDetails('anuja')">
+                <img src="../images/team/team1.jpg" alt="Team Member 1" class="thumbnail">
+                <h3>Anuja Jayasinghe</h3>
+                <div class="details" id="anuja">
+                    <p><strong>Role:</strong>UI Designer</p>
+                    <p><strong>Contributions:</strong>Splash Screen,Volunteer</p>
+                </div>
+            </div>
+
+            <div class="team-member" tabindex="0" onclick="showDetails('disas')">
+                <img src="../images/team/team2.jpg" alt="Team Member 2" class="thumbnail">
+                <h3>Disas Sethnada</h3>
+                <div class="details" id="disas">
+                    <p><strong>Role:</strong>Developer</p>
+                    <p><strong>Contributions:</strong>Home Page,Table</p>
+                </div>
+            </div>
+
+            <div class="team-member" tabindex="0" onclick="showDetails('sedani')">
+                <img src="../images/team/team3.jpg" alt="Team Member 3" class="thumbnail">
+                <h3>Sedani Lesara</h3>
+                <div class="details" id="sedani">      
+                    <p><strong>Role:</strong>Content Creator</p>
+                    <p><strong>Contributions:</strong>Feedback,Team</p>
+                </div>
+            </div>
+
+            <div class="team-member" tabindex="0" onclick="showDetails('binethma')">
+                <img src="../images/team/team4.jpg" alt="Team Member 4" class="thumbnail">
+                <h3>Binethma Jayawickrama</h3>
+                <div class="details" id="binethma">   
+                <p><strong>Role:</strong>Designing</p>
+                <p><strong>Contributions:</strong>User Profile</p>
+                </div>  
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Quality Education | <a href="editor.html">Page Editor</a></p>
+    </footer>
+
+    <script>
+        function showDetails(memberId){
+            let allDetails=document.querySelectorAll('.details');
+            allDetails.forEach(detail=> {
+                detail.style.display="none";
+            })
+
+            document.getElementById(memberId).style.display="block";
+        }
+    </script>
+    
+</body>
+</html>
