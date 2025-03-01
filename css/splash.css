@@ -10,10 +10,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(8, 85, 21);
+    color: rgb(26, 21, 21);
     font-family: Arial, sans-serif;
     text-align: center;
-    
+    background: url(../images/splash.jpg) no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+
+
 }
 
 /* Content */
