@@ -1,87 +1,312 @@
-/* General Styling */
+/* Global Styles */
+:root {
+    --primary-color: #2e8b57;
+    --secondary-color: #3cb371;
+    --accent-color: #f0f8ff;
+    --text-color: #333;
+    --light-gray: #f4f4f4;
+    --medium-gray: #ddd;
+    --dark-gray: #666;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #004466, #66c2ff);
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-/* Center the main title */
-header h1 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Container */
 .container {
-    background: #000;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    text-align: left;
 }
 
-/* User Profile Information inside the form */
-.form-title {
-    text-align: center;
-    color: white;
+/* Header Styles */
+header {
+    background-color: #fff;
+    border-radius: var(--border-radius);
     margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
 }
 
-/* Form Styling */
-.form-group {
+.main-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.main-menu li {
+    margin: 0 15px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.main-menu a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.main-menu a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+h2 {
+    color: var(--primary-color);
     margin-bottom: 15px;
-    text-align: left;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
 }
 
-/* Left-align labels */
-label {
-    display: block;
-    font-weight: bold;
+/* Profile Card Styles */
+.profile-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-container {
+    margin-right: 30px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.user-info h1 {
+    color: var(--primary-color);
     margin-bottom: 5px;
 }
 
-/* Input Fields, Textarea, and Select */
-input, textarea, select {
-    width: 100%;
-    height: 40px;
-    padding: 8px;
+.user-info .title {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* Skills Section */
+.skills-card {
+    background-color: #fff;
+}
+
+.skill {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-name {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex: 2;
+    height: 10px;
+    background-color: var(--medium-gray);
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    overflow: hidden;
 }
 
-/* Textarea Adjustments */
-textarea {
-    height: 80px;
-    resize: vertical;
+.progress {
+    height: 100%;
+    background-color: var(--primary-color);
 }
 
-/* Button */
-button {
-    width: 100%;
-    height: 40px;
-    background: #007bff;
-    border: none;
-    color: white;
-    font-size: 16px;
+.percentage {
+    margin-left: 10px;
+    color: var(--dark-gray);
     font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+    width: 40px;
+    text-align: right;
 }
 
-button:hover {
-    background: #0056b3;
+/* Experience List */
+.experience-list {
+    list-style: none;
 }
 
-/* Footer */
-footer {
-    margin-top: 20px;
+.experience-list li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.experience-list h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* UN Goals and Activities Sections */
+.goals-grid, .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.goal-item, .interest-item {
     text-align: center;
-    font-size: 14px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+}
+
+.goal-item:hover, .interest-item:hover {
+    transform: translateY(-5px);
+}
+
+.goal-icon, .interest-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Calendar Section */
+.calendar-section {
+    background-color: #fff;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar-table th, .calendar-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.calendar-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.calendar-table tr:hover {
+    background-color: var(--accent-color);
+}
+
+/* Contact Form Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color);
 }

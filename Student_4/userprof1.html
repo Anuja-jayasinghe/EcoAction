@@ -3,127 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile - Life Below Water</title>
+    <title>User Profile Page</title>
     <link rel="stylesheet" href="../css/useprofile.css">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Life Below Water - User Profile</h1>
-    </header>
-
     <div class="container">
-        <h2 class="form-title">User Profile Information</h2>
-        <form id="profile-form">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" required>
-            </div>
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#" class="active">Profile</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-            </div>
+        <!-- Main Content -->
+        <main>
+            <!-- User Profile Card -->
+            <section class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img src="avatar.jpeg" alt="Profile Picture" class="avatar">
+                    </div>
+                    <div class="user-info">
+                        <h1>Jessica Thompson</h1>
+                        <p class="title">Environmental Engineer</p>
+                        <p>Based in San Francisco, CA</p>
+                        <div class="social-icons">
+                            <a href="#" title="LinkedIn">&#128279;</a>
+                            <a href="#" title="Twitter">&#128038;</a>
+                            <a href="#" title="Instagram">&#128247;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="form-group">
-                <label for="age">Age:</label>
-                <input type="number" id="age" required>
-            </div>
+            <!-- Profile Information Section -->
+            <section class="info-section">
+                <div class="card">
+                    <h2>Introduction</h2>
+                    <p>Passionate environmental engineer with 5+ years of experience in sustainable design and climate change mitigation. My work focuses on developing innovative solutions for resource conservation and environmental protection.</p>
+                </div>
 
-            <div class="form-group">
-                <label for="volunteer">Have you volunteered before?</label>
-                <select id="volunteer">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </div>
+                <div class="card skills-card">
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <span class="skill-name">Environmental Impact Assessment</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                        <span class="percentage">95%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Sustainable Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%;"></div>
+                        </div>
+                        <span class="percentage">88%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Resource Management</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <span class="percentage">75%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Climate Modeling</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 82%;"></div>
+                        </div>
+                        <span class="percentage">82%</span>
+                    </div>
+                </div>
 
-            <div class="form-group">
-                <label for="volunteer-description">Describe your experience:</label>
-                <textarea id="volunteer-description"></textarea>
-            </div>
+                <div class="card">
+                    <h2>Experience</h2>
+                    <ul class="experience-list">
+                        <li>
+                            <h3>Senior Environmental Engineer</h3>
+                            <p>EcoSolutions Inc. | 2022 - Present</p>
+                            <p>Leading sustainable design projects for corporate clients</p>
+                        </li>
+                        <li>
+                            <h3>Environmental Consultant</h3>
+                            <p>GreenTech Partners | 2019 - 2022</p>
+                            <p>Provided consultation on environmental impact assessments</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-            <div class="form-group">
-                <label for="skills">Select your skills:</label>
-                <select id="skills" multiple>
-                    <option value="scuba diving">Scuba Diving</option>
-                    <option value="marine biology">Marine Biology</option>
-                    <option value="ocean cleanup">Ocean Cleanup</option>
-                </select>
-            </div>
+            <!-- Volunteering Section -->
+            <section class="card volunteering-section">
+                <h2>UN Goals I Support</h2>
+                <div class="goals-grid">
+                    <div class="goal-item">
+                        <span class="goal-icon">&#127757;</span>
+                        <p>Climate Action</p>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-icon">&#128167;</span>
+                        <p>Clean Water</p>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-icon">&#127794;</span>
+                        <p>Life on Land</p>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-icon">&#9851;</span>
+                        <p>Responsible Consumption</p>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-icon">&#127774;</span>
+                        <p>Affordable Clean Energy</p>
+                    </div>
+                    <div class="goal-item">
+                        <span class="goal-icon">&#127968;</span>
+                        <p>Sustainable Cities</p>
+                    </div>
+                </div>
+            </section>
 
-            <div class="form-group">
-                <label for="availability">Availability (Hours per week):</label>
-                <input type="number" id="availability" required>
-            </div>
+            <!-- Interests Section -->
+            <section class="card interests-section">
+                <h2>Activities I Participate In</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <span class="interest-icon">&#127754;</span>
+                        <p>Marine Conservation</p>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">&#127793;</span>
+                        <p>Environmental Conservation</p>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">&#127780;</span>
+                        <p>Climate Action</p>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">&#128052;</span>
+                        <p>Therapeutic Horse Care Volunteer Project </p>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">&#127758;</span>
+                        <p>Forest Conservation</p>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">&#127796;</span>
+                        <p>Agriculture Conservation</p>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">&#127806;</span>
+                        <p>Eco-Agriculture Conservation</p>
+                    </div>
+                </div>
+            </section>
 
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" required>
-            </div>
+            <!-- Calendar Section -->
+            <section class="card calendar-section">
+                <h2>Availability</h2>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9 AM - 5 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10 AM - 4 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11 AM - 3 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-            <div class="form-group">
-                <label for="message">Why do you want to join?</label>
-                <textarea id="message" required></textarea>
-            </div>
+            <!-- Contact Form Section -->
+            <section class="card contact-section">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
 
-            <button type="submit">Submit</button>
-        </form>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Jessica Thompson | Environmental Engineer</p>
+            <p><a href="#" class="editor-link">4-Page Editor</a></p>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-name">
-                <h2 id="footer-text">EcoAction</h2>
-            </div>
-            
-            <div class="footer-links">
-                <div class="link-section">
-                    <h4>Website Links</h4>
-                    <ul>
-                        <li><a href="../Student_2/home.html">Home</a></li>
-                        <li><a href="../Student_1/volunteer.html">Volunteer</a></li>
-                        <li><a href="../Student_2/table.html">Table</a></li>
-                        <li><a href="../Student_3/feedback.html">Feedback</a></li>
-                        <li><a href="../Student_3/team.html">Team</a></li>
-                        <li><a href="../Student_4/sitemap.html">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="link-section">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
-                        <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
-                        <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
-                        <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
-                        <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
-                    </ul>
-                </div>
-                <div class="link-section">
-                    <h4>Content Pages</h4>
-                    <ul>
-                        <li><a href="../Student_1/content_ST1.html">Content 01</a></li>
-                        <li><a href="../Student_2/content_ST2.html">Content 02</a></li>
-                        <li><a href="../Student_3/content_ST3.html">Content 03</a></li>
-                        <li><a href="../Student_4/content_ST4.html">Content 04</a></li>
-                    </ul>
-                </div>
-                <div class="link-section">
-                    <h4>Student Pages(Page Editors)</h4>
-                    <ul>
-                        <li><a href="../Student_1/page_editor_ST1.html">Student 01</a></li>
-                        <li><a href="../Student_2/page_editor_ST2.html">Student 02</a></li>
-                        <li><a href="../Student_3/page_editor_ST3.html">Student 03</a></li>
-                        <li><a href="../Student_4/page_editor_ST4.html">Student 04</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 <b>United Nations</b>. All rights reserved. | Designed by <b>Group 2 SubGroup 4</b></p>
-        </div>
-    </footer>
 </body>
 </html>
-
