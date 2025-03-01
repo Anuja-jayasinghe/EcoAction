@@ -3,212 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Action - Data</title>
+    <title>Climate Action - Home</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/table.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
                 <img src="../images/mainLogo.png" alt="Climate Logo">
-                <a href="../Student_2/home.html"><h1>EcoAction</h1></a>
+                <a href="../Student_2/home.html"> <h1>EcoAction</h1></a>
             </div>
             <ul>
-                <li><a href="../Student_2/home.html">Home</a></li>
+                <li><a href="../Student_2/home.html" class="active">Home</a></li>
                 <li><a href="../student_1/volunteer.html">Volunteer</a></li>
-                <li><a href="../student_2/table.html" class="active">Data</a></li>
+                <li><a href="../student_2/table.html">Data</a></li>
                 <li><a href="../student_3/feedback.html">Feedback</a></li>
+                <li><a href="../student_3/team.html">Team</a></li>
                 <li><a href="../student_4/profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="data-table">
-        <table>
-            <caption aria-label="Interactive data table showing climate change indicators over time">Global Climate Indicators 2000-2025</caption>
-            <thead>
-                <tr>
-                    <th colspan="6" class="table-header">
-                        <img src="../images/mainLogo.png" alt="EcoAction Logo" class="table-logo">
-                        <span>Climate Data Dashboard</span>
-                    </th>
-                </tr>
-                <tr class="column-headers">
-                    <th aria-label="Year of Measurement">
-                        📅 <span class="tooltip">Year<span class="tooltiptext">Time period of climate measurements</span></span>
-                    </th>
-                    <th aria-label="CO2 Emissions in Metric Tons">
-                        🏭 <span class="tooltip">CO₂ Emissions<span class="tooltiptext">Annual carbon dioxide emissions in million metric tons</span></span>
-                    </th>
-                    <th aria-label="Global Temperature Anomaly">
-                        🌡️ <span class="tooltip">Temp. Rise<span class="tooltiptext">Temperature increase compared to pre-industrial levels</span></span>
-                    </th>
-                    <th aria-label="Sea Level Rise in Millimeters">
-                        🌊 <span class="tooltip">Sea Levels<span class="tooltiptext">Average sea level rise in millimeters</span></span>
-                    </th>
-                    <th aria-label="Renewable Energy Percentage">
-                        🔆 <span class="tooltip">Renewables<span class="tooltiptext">Percentage of global energy from renewable sources</span></span>
-                    </th>
-                    <th aria-label="Trend Analysis and Projections">
-                        📈 <span class="tooltip">Trend<span class="tooltiptext">Analysis of climate indicator trends</span></span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="data-row">
-                    <td rowspan="2">2000-2005</td>
-                    <td>25,180 <i class="fas fa-industry"></i></td>
-                    <td>+0.42°C</td>
-                    <td>20mm</td>
-                    <td>7.9% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-up">▲ 12.4%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2000" aria-label="View detailed climate report for 2000-2005">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row">
-                    <td rowspan="2">2006-2010</td>
-                    <td>28,420 <i class="fas fa-industry"></i></td>
-                    <td>+0.54°C</td>
-                    <td>25mm</td>
-                    <td>9.8% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-up">▲ 14.1%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2006" aria-label="View detailed climate report for 2006-2010">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row">
-                    <td rowspan="2">2011-2015</td>
-                    <td>32,150 <i class="fas fa-industry"></i></td>
-                    <td>+0.67°C</td>
-                    <td>32mm</td>
-                    <td>12.5% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-up">▲ 13.8%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2011" aria-label="View detailed climate report for 2011-2015">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row">
-                    <td rowspan="2">2016-2020</td>
-                    <td>35,780 <i class="fas fa-industry"></i></td>
-                    <td>+0.85°C</td>
-                    <td>41mm</td>
-                    <td>16.3% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-up">▲ 11.3%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2016" aria-label="View detailed climate report for 2016-2020">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row highlighted-row">
-                    <td rowspan="2">2021-2022</td>
-                    <td>36,920 <i class="fas fa-industry"></i></td>
-                    <td>+1.02°C</td>
-                    <td>46mm</td>
-                    <td>19.8% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-up">▲ 3.2%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2021" aria-label="View detailed climate report for 2021-2022">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row">
-                    <td rowspan="2">2023</td>
-                    <td>37,150 <i class="fas fa-industry"></i></td>
-                    <td>+1.14°C</td>
-                    <td>48mm</td>
-                    <td>22.1% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-up">▲ 0.6%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2023" aria-label="View detailed climate report for 2023">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row">
-                    <td rowspan="2">2024</td>
-                    <td>36,890 <i class="fas fa-industry"></i></td>
-                    <td>+1.18°C</td>
-                    <td>51mm</td>
-                    <td>25.6% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-down">▼ 0.7%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2024" aria-label="View detailed climate report for 2024">
-                            <i class="fas fa-file-alt"></i> View Detailed Report
-                        </a>
-                    </td>
-                </tr>
-                
-                <tr class="data-row forecast-row">
-                    <td rowspan="2">2025 (Projected)</td>
-                    <td>36,250 <i class="fas fa-industry"></i></td>
-                    <td>+1.21°C</td>
-                    <td>53mm</td>
-                    <td>28.9% <i class="fas fa-check-circle"></i></td>
-                    <td><span class="trend-down">▼ 1.7%</span></td>
-                </tr>
-                <tr class="details-row">
-                    <td colspan="5">
-                        <a href="../Student_2/content_ST2.html#2025" aria-label="View climate projections for 2025">
-                            <i class="fas fa-chart-line"></i> View Projections
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="6" class="summary-cell">
-                        <div class="summary-data">
-                            <span><i class="fas fa-exclamation-triangle"></i> Net Temperature Increase: +0.79°C since 2000</span>
-                            <span><i class="fas fa-water"></i> Total Sea Level Rise: 33mm since 2000</span>
-                            <span><i class="fas fa-solar-panel"></i> Renewable Energy Growth: +21.0% since 2000</span>
-                        </div>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-        
-        <div class="table-legend">
-            <h3>Legend</h3>
-            <ul>
-                <li><i class="fas fa-industry"></i> - CO₂ emissions in million metric tons</li>
-                <li><i class="fas fa-check-circle"></i> - Goals on track for Paris Agreement targets</li>
-                <li><span class="trend-up">▲</span> - Increasing trend (concerning for emissions/temperature)</li>
-                <li><span class="trend-down">▼</span> - Decreasing trend (positive for emissions)</li>
-            </ul>
-        </div>
-    </section>
+
 
     <footer class="footer">
         <div class="footer-container">
@@ -263,5 +80,7 @@
             <p>&copy; 2025 <b>United Nations</b>. All rights reserved. | Designed by <b>Group 2 SubGroup 4</b></p>
         </div>
     </footer>
+    
+
 </body>
 </html>
