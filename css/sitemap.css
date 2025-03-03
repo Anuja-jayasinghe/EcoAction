@@ -1,185 +1,188 @@
-/* Global Styles */
-:root {
-    --primary-color: #2e8b57;
-    --secondary-color: #3cb371;
-    --accent-color: #f0f8ff;
-    --text-color: #333;
-    --light-gray: #f4f4f4;
-    --medium-gray: #ddd;
-    --dark-gray: #666;
-    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    --border-radius: 8px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: var(--light-gray);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #fff;
-    border-radius: var(--border-radius);
-    margin-bottom: 20px;
-    box-shadow: var(--card-shadow);
-}
-
-.main-menu {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    padding: 15px 0;
-}
-
-.main-menu li {
-    margin: 0 15px;
-}
-
-.main-menu a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.main-menu a:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-}
-
-.main-menu a.active {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-/* Main Content Styles */
-main {
-    padding: 20px 0;
-}
-
-.sitemap-section {
-    background-color: #fff;
-    border-radius: var(--border-radius);
-    padding: 30px;
-    margin-bottom: 20px;
-    box-shadow: var(--card-shadow);
-}
-
-h1 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
+/* Title Styling */
+.cyber-title {
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00f3ff, #ff00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+    margin-bottom: 2rem;
+    padding-top: 20px;
+    width: 100%;
 }
 
-.sitemap-section p {
-    text-align: center;
-    margin-bottom: 30px;
-    color: var(--dark-gray);
-}
-
-/* Sitemap List Styles */
-.sitemap-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.sitemap-category {
-    background-color: var(--accent-color);
-    border-radius: var(--border-radius);
-    padding: 20px;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sitemap-category:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--hover-shadow);
-}
-
-.sitemap-category h2 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 8px;
-}
-
-.sitemap-category ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sitemap-category ul li {
-    margin-bottom: 10px;
-}
-
-.sitemap-category ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.sitemap-category ul li a:hover {
-    color: var(--primary-color);
-}
-
-.sitemap-category p {
-    margin-top: 10px;
-    color: var(--dark-gray);
-    font-style: italic;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #2e8b57;
-    border-radius: var(--border-radius);
-    padding: 20px;
-    text-align: center;
-    box-shadow: var(--card-shadow);
-    margin-top: 20px;
-}
-
-.footer-content {
+/* Sitemap Container */
+.sitemap-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    flex-grow: 1; /* Ensure content takes up available space */
 }
 
-.editor-link {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.editor-link:hover {
+/* Splash Screen at the Top */
+#splash-screen {
+    background: #ff00ff;
     color: white;
-    text-decoration: underline;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
 }
 
-/* Responsive Design */
+/* Row Layout for Navigation Links */
+.sitemap-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    overflow-x: visible; /* Allows horizontal scrolling if necessary */
+    padding-bottom: 0; /* Remove extra space */
+    margin-bottom: 0;  /* Avoid pushing footer */
+}
+
+/* Ensure nodes inside the row are evenly spaced */
+.sitemap-row .sitemap-node {
+    flex: 1;
+    min-width: 120px; /* Adjust this value if needed */
+    text-align: center;
+}
+
+/* Container styling */
+.content-container,
+.student-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Individual Column */
+.sitemap-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Node Styling */
+.sitemap-node {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    width: 100%;
+}
+
+/* Main node styling in containers */
+.content-container > .sitemap-node,
+.student-container > .sitemap-node {
+    background: #00f3ff;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Sub-node styling in columns */
+.sitemap-column .sitemap-node {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #00f3ff;
+}
+
+.sitemap-node:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+    z-index: 10;
+}
+
+/* Preview container */
+.preview-container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    max-width: 90vw;
+    background: #1a1a1a;
+    border: 2px solid #00f3ff;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+}
+
+.sitemap-node:hover .preview-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+.preview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.preview-title {
+    color: #00f3ff;
+    margin-bottom: 5px;
+}
+
+.preview-desc {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #ccc;
+    text-transform: none;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .sitemap-list {
-        grid-template-columns: 1fr;
+    .sitemap-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sitemap-node {
+        max-width: 300px;
+    }
+
+    .content-container,
+    .student-container {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sitemap-node {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .preview-container {
+        width: 240px;
     }
 }
