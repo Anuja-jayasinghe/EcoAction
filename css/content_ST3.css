@@ -46,3 +46,14 @@
     color: #192735;
     margin-bottom: 15px;
 }
+
+/* Image Styling */
+.container .image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

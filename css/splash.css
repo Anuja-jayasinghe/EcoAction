@@ -10,19 +10,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(26, 21, 21);
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     text-align: center;
-    background: url(../images/splash.jpg) no-repeat center center/cover;
-    backdrop-filter: blur(10px);
-
-
+    overflow: hidden;
 }
 
-/* Content */
+/* Video Background */
+.video-container {
+    transition: opacity 2s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-container video {
+    transition: opacity 2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Splash Screen Content */
+.splash-container {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 2s ease-in-out; /* Smooth fade-out transition */
+}
+
+.splash-container.fade-out {
+    opacity: 0; /* Fade-out effect */
+}
+
 .splash-container h1 {
     font-size: 3rem;
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -34,13 +59,16 @@ body {
 .group {
     margin-top: 20px;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: bolder;
 }
+
 .students {
+    font-weight: 700;
     margin-top: 10px;
     list-style: none;
     padding: 0;
 }
+
 .students li {
     margin: 5px 0;
 }
@@ -57,20 +85,6 @@ body {
     border-radius: 10px;
 }
 
-.btn:hover {
+.button:hover {
     background: #218838;
-}
-.loader {
-    margin: 20px auto;
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    border-top: 5px solid white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
