@@ -7,13 +7,19 @@
     <title>EcoAction - Splash Screen</title>
     <link rel="stylesheet" href="../css/splash.css">
     <script>
-        // Redirect to home.html after 3 seconds
+        // Redirect to home.html after 3 seconds with fade-out effect
         setTimeout(() => {
-            window.location.href = "../Student_2/home.html";
-        }, 93000);
+            document.querySelector('.splash-container').classList.add('fade-out');
+            setTimeout(() => { window.location.href = "../Student_2/home.html"; }, 1000); // Wait for fade-out transition
+        }, 1000);
     </script>
 </head>
 <body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="../images/backvid.mov" type="video/quicktime">
+        </video>
+    </div>
     <div class="splash-container">
         <h1>Climate Change & Sustainability</h1>
         <p>Raising awareness and promoting sustainable solutions to combat climate change for a greener future.</p>
