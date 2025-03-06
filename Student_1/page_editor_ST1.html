@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile - Disas Sethnada</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/page_editor.css">
+    <link rel="stylesheet" href="../css/pageEditor_validator.css"> <!-- External CSS link -->
 </head>
 <body>
     <header>
@@ -26,11 +25,6 @@
         </nav>
     </header>
 
-    <div class="profile-container">
-        <div class="profile-header">
-            <h1>Student Profile</h1>
-        </div>
-        
         <div class="profile-card">
             <div class="profile-section profile-info">
                 <div class="profile-avatar">
@@ -38,98 +32,100 @@
                 </div>
                 <div class="profile-details">
                     <h2>Disas Sethnada</h2>
-                    <div class="role-badge">Splash Screen & Volunteer Page Developer</div>
+                    <div class="role-badge">Student 1</div>
                 </div>
             </div>
             
-            <div class="profile-section">
-                <h3><i class="icon-tasks"></i>Completed Tasks</h3>
-                <ul class="task-list">
-                    <li>
-                        <a href="../Student_1/splash.html" class="task-link">
-                            <span class="task-name">Splash Screen</span>
-                            <span class="task-status completed">Completed</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../Student_1/volunteer.html" class="task-link">
-                            <span class="task-name">Volunteer Page</span>
-                            <span class="task-status completed">Completed</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../Student_1/content_ST1.html" class="task-link">
-                            <span class="task-name">Content Page 1</span>
-                            <span class="task-status completed">Completed</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="profile-section">
-                <h3><i class="icon-code"></i>Technical Implementation</h3>
-                <div class="tech-details">
-                    <p>The Splash Screen and Volunteer Page were developed using HTML, CSS, and JavaScript to ensure an engaging and functional user experience.</p>
-                    <div class="tech-cards">
-                        <div class="tech-card">
-                            <h4>HTML</h4>
-                            <p>Semantic elements like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> were used to structure content.</p>
-                        </div>
-                        <div class="tech-card">
-                            <h4>CSS</h4>
-                            <p>Flexbox and Grid were implemented for layout consistency, along with media queries for responsiveness.</p>
-                        </div>
-                        <div class="tech-card">
-                            <h4>JavaScript</h4>
-                            <p>Interactive part such as sorting and filtering parts in volunteer programs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="profile-section">
-                <h3><i class="icon-challenge"></i>Challenges & Lessons</h3>
-                <div class="challenges">
-                    <div class="challenge-item">
-                        <h4>Responsive Design</h4>
-                        <p>Ensuring proper layout across different screen sizes required adjustments with CSS media queries.</p>
-                    </div>
-                    <div class="challenge-item">
-                        <h4>Animations</h4>
-                        <p>Smooth transitions on the Splash Screen required fine-tuning of CSS animations and JavaScript event listeners.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="profile-section">
-                <h3><i class="icon-accessibility"></i>Accessibility & Compliance</h3>
-                <div class="compliance-container">
-                    <div class="compliance-item">
-                        <h4>Accessibility Features</h4>
-                        <ul>
-                            <li>Keyboard navigation support for all interactive components.</li>
+            <div class="container">
+                <main>
+                    <section>
+                        <h2 id="splash">Splash Screen Page</h2>
+                        <h3>Technical Description</h3>
+                        <p>The Splash Screen was designed using HTML and CSS, incorporating responsive design principles to ensure compatibility across different devices. Semantic elements were used to improve readability and maintainability.</p>
+                        <h3>Accessibility</h3>
+                        <p>The Splash Screen Page follows accessibility best practices, including descriptive alt attributes for images, keyboard navigability, and proper ARIA roles.</p>
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST0.html#splashVal">Validation Page</a></p>
+                        <h3>Link to the page</h3>
+                        <p><a href="../Student_1/splash.html">Splash Screen Page</a></p>
+                    </section>
+                    <section>
+                        <h2 id="Volunteer">Volunteer Page</h2>
+                        <h3>Technical Description</h3>
+                        <p>The Volunteer Page Flexbox and Grid were implemented for layout consistency, along with media queries for responsiveness..</p>
+                        <h3>Accessibility</h3>
+                        <p>Keyboard navigation support for all interactive components.</p>
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST0.html#tableVal">Validation Page</a></p>
+                        <h3>Link to the page</h3>
+                        <p><a href="../Student_1/volunteer.html">Volunteer Page</a></p>
+                    </section>  
+                    <section>
+                        <h2 id="content">Content Page</h2>
+                        <h3>Technical Description</h3>
+                        <p>The Content Page utilizes structured HTML with proper heading hierarchies and CSS for styling. It includes multimedia elements with captions for enhanced user experience.</p>
+                        <h3>Accessibility</h3>
+                        <p>ARIA roles and labels were used to improve navigation and usability for assistive technologies.</p>
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST0.html#contentVal">Validation Page</a></p>
+                        <h3>Link to the page</h3>
+                        <p><a href="../Student_1/content_ST1.html">Content Page</a></p>
+                    </section>
+                    <section>
+                        <h2 id="challenge">Challenges and Lessons Learned</h2>
+                        <p>Implementing responsive design and ensuring accessibility compliance were key challenges. Using flexbox and media queries improved adaptability, while learning ARIA roles enhanced accessibility knowledge.</p>
+                    </section>
+                    <section>
+                        <h2 id="compliance">Compliance</h2>
+                        <p>All pages adhere to Janet web publishing regulations, ensuring proper use of HTML structure, accessibility guidelines, and user privacy considerations.</p>
+                    </section>
+                    <section>
+                        <h2 id="ref">References</h2>
+                        <ul class="ref">
+                            <li>Pixabay (2025) <i>Pixabay.</i> Available at: <a href="#">https://www.pixabay.com/</a> (Last accessed: 04 Mar 2025).</li>
+                            <li>W3Schools (2025) <i>W3Schools.</i> Available at: <a href="#">https://www.w3schools.com/</a> (Last accessed: 4 Mar 2025).</li>
+        
                         </ul>
-                    </div>
-                    <div class="compliance-item">
-                        <h4>Web Standards</h4>
-                        <ul>
-                            <li>Pages adhere to HTML5 and CSS3 standards.</li>
-                            <li>Ensured cross-browser compatibility for optimal performance.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="profile-section">
-                <h3><i class="icon-reference"></i>References</h3>
-                <ul class="reference-list">
-                    <li>MDN Web Docs - HTML, CSS, JavaScript</li>
-                    <li>W3 School - HTML, CSS</li>
-                    <li>CSS Tricks - Advanced Styling Techniques</li>
-                </ul>
+                    </section>
+                    <p class="top"><a href="#top">Go top</a></p>
+                </main>
+                <aside>
+                    <h3>Core pages developed:</h3>
+        
+                <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                    <ul class="top-level-ul">
+                        <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                        <li>Student 1</li>
+                            <ul> 
+                                <li><a href="../Student_1/splash.html">Splash page</a></li>
+                                <li><a href="../Student_1/volunteer.html">Volunteer page</a></li>
+                                <li><a href="../Student_1/content_ST1.html">Content page</a></li>
+                            </ul>
+                        <li>Student 2</li>
+                            <ul>
+                                <li><a href="../Student_2/home.html">Home page </a></li>
+                                <li><a href="../Student_2/table.html">Table page</a></li>
+                                <li><a href="../Student_2/content_ST2.html">Content page</a></li>
+                            </ul>
+                        <li>Student 3</li>
+                            <ul>
+                                <li><a href="../Student_3/feedback.html">Feedback page</a> </li>
+                                <li><a href="../Student_3/team.html">Team page</a></li>
+                                <li><a href="../Student_3/content_ST3.html">Content page</a></li>
+                            </ul>
+                        <li>Student 4</li>
+                            <ul>
+                                <li><a href="../Student_4/profile.html">Profile page </a></li>
+                                <li><a href="../Student_4/sitemap.html">Sitemap page</a></li>
+                                <li><a href="../Student_4/content_ST4.html">Content page</a></li>
+                            </ul>
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#ref">References</a></li>
+                    </ul>
+                </aside>
             </div>
         </div>
-    </div>
 
     <footer class="footer">
         <div class="footer-container">
