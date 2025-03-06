@@ -282,3 +282,7 @@ nav ul li a.active {
 nav ul li a:hover {
     background: rgba(65, 176, 110, 0.1) !important;
 }
+/* Add to pageEditor_validator.css */
+header nav .logo a {
+    text-decoration: none;
+}
