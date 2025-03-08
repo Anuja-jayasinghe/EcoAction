@@ -132,62 +132,86 @@
             </div>
         </div>
     </section>
-    <a href="#" class="go-to-top" aria-label="Go to top"></a>
+
+    <section class="review-section">
+        <h2>Program Ratings & Reviews</h2>
+        <div class="rating-summary">
+            <h3>Overall Rating: 4.5/5</h3>
+            <p>Total Reviews: 125</p>
+        </div>
+    
+        <div class="review-cards">
+            <div class="review-card">
+                <h4>Great Experience!</h4>
+                <p>Duration: 3 weeks, worth every minute! The activities were well-organized, and I learned a lot.</p>
+                <p><strong>Reviewer:</strong> John Doe | <strong>Date:</strong> March 5, 2025</p>
+            </div>
+            <div class="review-card">
+                <h4>Life-changing!</h4>
+                <p>The marine conservation project really opened my eyes to the environmental issues. Highly recommend!</p>
+                <p><strong>Reviewer:</strong> Jane Smith | <strong>Date:</strong> February 20, 2025</p>
+            </div>
+    
+            <!-- Additional reviews will be hidden initially -->
+            <div class="additional-reviews">
+                <div class="review-card">
+                    <h4>Amazing Opportunity!</h4>
+                    <p>This was an amazing opportunity to contribute to environmental efforts. I learned so much about sustainable farming practices.</p>
+                    <p><strong>Reviewer:</strong> Sarah Williams | <strong>Date:</strong> January 15, 2025</p>
+                </div>
+                <div class="review-card">
+                    <h4>Highly Educational!</h4>
+                    <p>Spent 4 weeks volunteering in forest conservation. It was a highly educational and rewarding experience. Definitely worth it!</p>
+                    <p><strong>Reviewer:</strong> Michael Lee | <strong>Date:</strong> December 30, 2024</p>
+                </div>
+            </div>
+    
+            <!-- Buttons for toggling the reviews -->
+            <a href="#" class="see-more" id="seeMoreBtn">See More Reviews</a>
+            <a href="#" class="see-less" id="seeLessBtn" style="display: list-item;">See Less Reviews</a>
+        </div>
+    </section>
+    
+
+    <!-- Feedback Form -->
+    <section class="feedback-form">
+        <h2>Give Us Your Feedback</h2>
+        <form>
+            <textarea placeholder="Write your feedback here..." required></textarea>
+            <div class="rating">
+                <span>Rating:</span>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </section>
+
+    <p class="top"><a href="#top">Go top</a></p>
 
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-name">
                 <h2 id="footer-text">EcoAction</h2>
             </div>
-            
-            <div class="footer-links">
-                <div class="link-section">
-                    <h4>Website Links</h4>
-                    <ul>
-                        <li><a href="../Student_2/home.html">Home</a></li>
-                        <li><a href="../Student_1/volunteer.html">Volunteer</a></li>
-                        <li><a href="../Student_2/table.html">Table</a></li>
-                        <li><a href="../Student_3/feedback.html">Feedback</a></li>
-                        <li><a href="../Student_3/team.html">Team</a></li>
-                        <li><a href="../Student_4/sitemap.html">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="link-section">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
-                        <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
-                        <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
-                        <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
-                        <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
-                    </ul>
-                </div>
-                <div class="link-section">
-                    <h4>Content Pages</h4>
-                    <ul>
-                        <li><a href="../Student_1/content_ST1.html">Content 01</a></li>
-                        <li><a href="../Student_2/content_ST2.html">Content 02</a></li>
-                        <li><a href="../Student_3/content_ST3.html">Content 03</a></li>
-                        <li><a href="../Student_4/content_ST4.html">Content 04</a></li>
-                    </ul>
-                </div>
-                <div class="link-section">
-                    <h4>Student Pages(Page Editors)</h4>
-                    <ul>
-                        <li><a href="../Student_1/page_editor_ST1.html">Student 01</a></li>
-                        <li><a href="../Student_2/page_editor_ST2.html">Student 02</a></li>
-                        <li><a href="../Student_3/page_editor_ST3.html">Student 03</a></li>
-                        <li><a href="../Student_4/page_editor_ST4.html">Student 04</a></li>
-                    </ul>
-                </div>
-            </div>
+            <!-- Footer content here -->
         </div>
         
         <div class="footer-bottom">
             <p>&copy; 2025 <b>United Nations</b>. All rights reserved. | Designed by <b>Group 2 SubGroup 4</b></p>
         </div>
     </footer>
-    <!-- JavaScript for Filtering and Sorting -->
+
+    <!-- JavaScript for Filtering, Sorting, and Interactivity -->
     <script>
         const sortingDropdown = document.getElementById('sorting');
         const filterDropdown = document.getElementById('filter-duration');
@@ -220,15 +244,38 @@
             programCards.innerHTML = '';
             filteredCards.forEach(card => programCards.appendChild(card));
         }
-            // Add this to your existing script
-            const applyButtons = document.querySelectorAll('.apply-btn');
 
-            applyButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const programName = button.closest('.card').querySelector('h3').textContent;
-                    alert(`You applied for: ${programName}`);
-                });
-            });
+        // Get the "See More Reviews" button, "See Less Reviews" button, and the additional reviews section
+        
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+        const seeLessBtn = document.getElementById('seeLessBtn');
+        const additionalReviews = document.querySelector('.additional-reviews');
+
+        // Initially hide the additional reviews
+        additionalReviews.style.display = 'none';
+
+        // Add event listener for the "See More Reviews" button
+        seeMoreBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            // Show additional reviews and display the "See Less Reviews" button
+            additionalReviews.style.display = 'block';
+            seeMoreBtn.style.display = 'none';  // Hide "See More Reviews"
+            seeLessBtn.style.display = 'inline-block';  // Show "See Less Reviews"
+        });
+
+        // Add event listener for the "See Less Reviews" button
+        seeLessBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            // Hide additional reviews and display the "See More Reviews" button
+            additionalReviews.style.display = 'none';
+            seeLessBtn.style.display = 'none';  // Hide "See Less Reviews"
+            seeMoreBtn.style.display = 'inline-block';  // Show "See More Reviews"
+        });
+
+        
+
     </script>
 
 </body>
