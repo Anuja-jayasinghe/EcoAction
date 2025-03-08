@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoAction- Website Sitemap</title>
+    <title>EcoAction - Website Sitemap</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sitemap.css">
@@ -13,10 +13,10 @@
         <nav>
             <div class="logo">
                 <img src="../images/mainLogo.png" alt="Climate Logo">
-                <a href="../Student_2/home.html"> <h1>EcoAction</h1></a>
+                <a href="../Student_2/home.html"><h1>EcoAction</h1></a>
             </div>
             <ul>
-                <li><a href="../Student_2/home.html" >Home</a></li>
+                <li><a href="../Student_2/home.html">Home</a></li>
                 <li><a href="../student_1/volunteer.html">Volunteer</a></li>
                 <li><a href="../student_2/table.html">Data</a></li>
                 <li><a href="../student_3/feedback.html">Feedback</a></li>
@@ -26,138 +26,127 @@
         </nav>
     </header>
     <div class="container">
-
-        <!-- Main Content -->
         <main>
             <section class="sitemap-section">
                 <h1>Website Sitemap</h1>
-                <p>This interactive diagram represents the structure of our website. Click on any page to navigate to it directly.</p>
-                
+                <p>This interactive diagram represents the structure of our website. Hover over any page to see a preview, or click to navigate to it directly.</p>
                 <div class="svg-container">
-                    <!-- SVG Sitemap -->
                     <svg id="sitemap" viewBox="0 0 1000 700" aria-labelledby="sitemap-title" role="img">
                         <title id="sitemap-title">Website Structure Sitemap</title>
                         <desc>An interactive sitemap showing the hierarchical structure of the website's pages</desc>
+                        <!-- Connect nodes with lines -->
+                        <!-- Home to second level -->
+                        <line class="connector" x1="500" y1="100" x2="200" y2="160" />
+                        <line class="connector" x1="500" y1="100" x2="500" y2="160" />
+                        <line class="connector" x1="500" y1="100" x2="800" y2="160" />
                         
-                        <!-- All connecting lines have been removed -->
+                        <!-- Second to third level -->
+                        <line class="connector" x1="200" y1="220" x2="200" y2="260" />
+                        <line class="connector" x1="500" y1="220" x2="500" y2="260" />
+                        <line class="connector" x1="800" y1="220" x2="800" y2="260" />
+                        
+                        <!-- Third level to fourth level columns -->
+                        <line class="connector" x1="200" y1="320" x2="200" y2="360" />
+                        <line class="connector" x1="800" y1="320" x2="800" y2="360" />
                         
                         <!-- Top Node (Home) -->
-                        <a href="../Student_1/splash.html" class="node-link" tabindex="0">
+                        <a href="../Student_1/splash.html" class="node-link" tabindex="0" data-preview="../images/sitemap/splash-preview.jpg">
                             <g class="node home-node">
                                 <rect x="430" y="40" width="140" height="60" rx="10" ry="10" />
                                 <text x="500" y="75">SPLASH SCREEN</text>
                             </g>
                         </a>
-                        
                         <!-- Second Row Nodes -->
-                        <a href="../Student_2/home.html" class="node-link" tabindex="0">
+                        <a href="../Student_2/home.html" class="node-link" tabindex="0" data-preview="../images/sitemap/Home-preview.jpg">
                             <g class="node section-node">
                                 <rect x="130" y="160" width="140" height="60" rx="10" ry="10" />
                                 <text x="200" y="195">HOME</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_1/volunteer.html"node-link" tabindex="0">
+                        <a href="../Student_1/volunteer.html" class="node-link" tabindex="0" data-preview="../images/sitemap/volunteer-preview.jpg">
                             <g class="node section-node">
                                 <rect x="430" y="160" width="140" height="60" rx="10" ry="10" />
                                 <text x="500" y="195">VOLUNTEER</text>
                             </g>
                         </a>
-                        
-                        <!-- New Box Under Section 2 -->
-                        <a href="../Student_2/table.html" class="node-link" tabindex="0">
+                        <a href="../Student_2/table.html" class="node-link" tabindex="0" data-preview="../images/sitemap/Table-preview.jpg">
                             <g class="node subnode">
                                 <rect x="430" y="260" width="140" height="60" rx="10" ry="10" />
                                 <text x="500" y="295">DATA</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_3/feedback.html" class="node-link" tabindex="0">
+                        <a href="../Student_3/feedback.html" class="node-link" tabindex="0" data-preview="../images/sitemap/feedback-preview.jpg">
                             <g class="node section-node">
                                 <rect x="730" y="160" width="140" height="60" rx="10" ry="10" />
                                 <text x="800" y="195">FEEDBACK</text>
                             </g>
                         </a>
-                        
                         <!-- Third Row Nodes -->
-                        <a href="../Student_3/team.html" class="node-link" tabindex="0">
+                        <a href="../Student_3/team.html" class="node-link" tabindex="0" data-preview="../images/sitemap/team-preview.jpg">
                             <g class="node subnode">
                                 <rect x="130" y="260" width="140" height="60" rx="10" ry="10" />
                                 <text x="200" y="295">TEAM</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_3/team.html" class="node-link" tabindex="0">
+                        <a href="../Student_4/profile.html" class="node-link" tabindex="0" data-preview="../images/sitemap/profile-preview.jpg">
                             <g class="node subnode">
                                 <rect x="730" y="260" width="140" height="60" rx="10" ry="10" />
                                 <text x="800" y="295">PROFILE</text>
                             </g>
                         </a>
-                        
                         <!-- First column of multiple items -->
-                        
-                            <g class="node item-node">
-                                <rect x="90" y="360" width="220" height="40" rx="10" ry="10" />
-                                <text x="200" y="385">CONTENT PAGES</text>
-                            </g>
-                        
-                        
-                        <a href="../Student_1/content_ST1.html" class="node-link" tabindex="0">
+                        <g class="node item-node">
+                            <rect x="90" y="360" width="220" height="40" rx="10" ry="10" />
+                            <text x="200" y="385">CONTENT PAGES</text>
+                        </g>
+                        <a href="../Student_1/content_ST1.html" class="node-link" tabindex="0" data-preview="../images/sitemap/content_st1-preview.jpg">
                             <g class="node item-node">
                                 <rect x="90" y="410" width="220" height="40" rx="10" ry="10" />
                                 <text x="200" y="435">STUDENT 1</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_2/content_ST2.html" class="node-link" tabindex="0">
+                        <a href="../Student_2/content_ST2.html" class="node-link" tabindex="0" data-preview="../images/sitemap/content_st2-preview.jpg">
                             <g class="node item-node">
                                 <rect x="90" y="460" width="220" height="40" rx="10" ry="10" />
                                 <text x="200" y="485">STUDENT 2</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_3/content_ST3.html" class="node-link" tabindex="0">
+                        <a href="../Student_3/content_ST3.html" class="node-link" tabindex="0" data-preview="../images/sitemap/content_st3-preview.jpg">
                             <g class="node item-node">
                                 <rect x="90" y="510" width="220" height="40" rx="10" ry="10" />
                                 <text x="200" y="535">STUDENT 3</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_4/content_ST4.html" class="node-link" tabindex="0">
+                        <a href="../Student_4/content_ST4.html" class="node-link" tabindex="0" data-preview="../images/sitemap/content_st4-preview.jpg">
                             <g class="node item-node">
                                 <rect x="90" y="560" width="220" height="40" rx="10" ry="10" />
                                 <text x="200" y="585">STUDENT 4</text>
                             </g>
                         </a>
-                        
                         <!-- Second column of multiple items -->
-                            <g class="node item-node">
-                                <rect x="690" y="360" width="220" height="40" rx="10" ry="10" />
-                                <text x="800" y="385">STUDENT PAGES</text>
-                            </g>
-                        
-                        <a href="../Student_1/page_editor_ST1.html" class="node-link" tabindex="0">
+                        <g class="node item-node">
+                            <rect x="690" y="360" width="220" height="40" rx="10" ry="10" />
+                            <text x="800" y="385">STUDENT PAGES</text>
+                        </g>
+                        <a href="../Student_1/page_editor_ST1.html" class="node-link" tabindex="0" data-preview="../images/sitemap/PageEditor_ST1-preview.jpg">
                             <g class="node item-node">
                                 <rect x="690" y="410" width="220" height="40" rx="10" ry="10" />
                                 <text x="800" y="435">STUDENT 1</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_2/page_editor_ST2.html" class="node-link" tabindex="0">
+                        <a href="../Student_2/page_editor_ST2.html" class="node-link" tabindex="0" data-preview="../images/sitemap/PageEditor_ST2-preview.jpg">
                             <g class="node item-node">
                                 <rect x="690" y="460" width="220" height="40" rx="10" ry="10" />
                                 <text x="800" y="485">STUDENT 2</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_3/page_editor_ST3.html" class="node-link" tabindex="0">
+                        <a href="../Student_3/page_editor_ST3.html" class="node-link" tabindex="0" data-preview="../images/sitemap/PageEditor_ST3-preview.jpg">
                             <g class="node item-node">
                                 <rect x="690" y="510" width="220" height="40" rx="10" ry="10" />
                                 <text x="800" y="535">STUDENT 3</text>
                             </g>
                         </a>
-                        
-                        <a href="../Student_4/page_editor_ST4.html" class="node-link" tabindex="0">
+                        <a href="../Student_4/page_editor_ST4.html" class="node-link" tabindex="0" data-preview="../images/sitemap/PageEditor_ST4-preview.jpg">
                             <g class="node item-node">
                                 <rect x="690" y="560" width="220" height="40" rx="10" ry="10" />
                                 <text x="800" y="585">STUDENT 4</text>
@@ -165,18 +154,21 @@
                         </a>
                     </svg>
                 </div>
+                
+                <!-- Preview Container -->
+                <div id="preview-container" class="preview-container">
+                    <img id="preview-image" src="" alt="Page Preview">
+                    <div id="preview-title" class="preview-title"></div>
+                </div>
             </section>
         </main>
-
     </div>
     <p class="top"><a href="#top">Go top</a></p>
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-name">
                 <h2 id="footer-text">EcoAction</h2>
             </div>
-            
             <div class="footer-links">
                 <div class="link-section">
                     <h4>Website Links</h4>
@@ -209,7 +201,7 @@
                     </ul>
                 </div>
                 <div class="link-section">
-                    <h4>Student Pages(Page Editors)</h4>
+                    <h4>Student Pages (Page Editors)</h4>
                     <ul>
                         <li><a href="../Student_1/page_editor_ST1.html">Student 01</a></li>
                         <li><a href="../Student_2/page_editor_ST2.html">Student 02</a></li>
@@ -219,10 +211,68 @@
                 </div>
             </div>
         </div>
-        
         <div class="footer-bottom">
             <p>&copy; 2025 <b>United Nations</b>. All rights reserved. | Designed by <b>Group 2 SubGroup 4</b></p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nodeLinks = document.querySelectorAll('.node-link');
+            const previewContainer = document.getElementById('preview-container');
+            const previewImage = document.getElementById('preview-image');
+            const previewTitle = document.getElementById('preview-title');
+            
+            // Show preview on hover
+            nodeLinks.forEach(node => {
+                if (node.hasAttribute('data-preview')) {
+                    node.addEventListener('mouseenter', function() {
+                        const previewSrc = this.getAttribute('data-preview');
+                        const pageName = this.querySelector('text').textContent.trim();
+                        
+                        previewImage.src = previewSrc;
+                        previewTitle.textContent = pageName;
+                        previewContainer.classList.add('visible');
+                        
+                        // Update position to follow cursor
+                        document.addEventListener('mousemove', updatePreviewPosition);
+                    });
+                    
+                    node.addEventListener('mouseleave', function() {
+                        previewContainer.classList.remove('visible');
+                        // Remove the event listener when not hovering
+                        document.removeEventListener('mousemove', updatePreviewPosition);
+                    });
+                }
+            });
+            
+            // Function to update preview position
+            function updatePreviewPosition(e) {
+                const x = e.clientX;
+                const y = e.clientY;
+                const buffer = 20; // Space between cursor and preview
+                
+                // Check if we're on the right side of the screen
+                const rightSide = x > window.innerWidth / 2;
+                
+                if (rightSide) {
+                    // Position to the left of cursor
+                    previewContainer.style.left = (x - previewContainer.offsetWidth - buffer) + 'px';
+                } else {
+                    // Position to the right of cursor
+                    previewContainer.style.left = (x + buffer) + 'px';
+                }
+                
+                // Adjust vertical position to avoid going off-screen
+                let topPosition = y - previewContainer.offsetHeight / 2;
+                if (topPosition < 10) topPosition = 10;
+                if (topPosition + previewContainer.offsetHeight > window.innerHeight - 10) {
+                    topPosition = window.innerHeight - previewContainer.offsetHeight - 10;
+                }
+                
+                previewContainer.style.top = topPosition + 'px';
+            }
+        });
+    </script>
 </body>
 </html>

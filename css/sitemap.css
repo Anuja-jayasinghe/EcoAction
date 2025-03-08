@@ -36,10 +36,6 @@ body {
     padding: 20px;
 }
 
-
-
-
-
 /* Main Content Styles */
 main {
     padding: 20px 0;
@@ -51,6 +47,7 @@ main {
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: var(--card-shadow);
+    position: relative; /* For positioning the preview container */
 }
 
 h1 {
@@ -126,13 +123,6 @@ svg {
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-/* Connect the hover state to lines */
-.node-link:hover + .connector,
-.node-link:hover ~ .connector {
-    stroke: var(--primary-color);
-    stroke-width: 3;
-}
-
 /* For keyboard navigation */
 .node-link:focus {
     outline: none;
@@ -143,6 +133,44 @@ svg {
     stroke: #e67e22;
     stroke-width: 3;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+/* Preview Container Styles */
+.preview-container {
+    position: fixed;
+    z-index: 1000;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    pointer-events: none; /* Allows mouse events to pass through */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.preview-container.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#preview-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.preview-title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 5px;
+    background-color: var(--accent-color);
+    border-radius: 4px;
 }
 
 /* Footer Styles */
@@ -193,6 +221,11 @@ footer {
     /* Adjust sitemap visibility on smaller screens */
     #sitemap {
         min-width: 800px; /* Ensure minimum width to prevent excessive compression */
+    }
+    
+    /* Make preview smaller on mobile */
+    .preview-container {
+        width: 200px;
     }
 }
 
