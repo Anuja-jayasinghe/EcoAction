@@ -3,167 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Action - Sitemap</title>
-    <link rel="stylesheet" href="../css/sitemap.css">
+    <title>EcoAction- Website Sitemap</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sitemap.css">
 </head>
-<body id="body1">
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="../images/mainLogo.png" alt="Climate Logo">
-                <a href="../Student_2/home.html"> <h1>EcoAction</h1></a>
+<body>
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="../images/mainLogo.png" alt="Climate Logo">
+                    <a href="../Student_2/home.html"> <h1>EcoAction</h1></a>
+                </div>
+                <ul>
+                    <li><a href="../Student_2/home.html" class="active">Home</a></li>
+                    <li><a href="../student_1/volunteer.html">Volunteer</a></li>
+                    <li><a href="../student_2/table.html">Data</a></li>
+                    <li><a href="../student_3/feedback.html">Feedback</a></li>
+                    <li><a href="../student_3/team.html">Team</a></li>
+                    <li><a href="../student_4/profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="container">
+            <section class="sitemap-section">
+                <h1>Website Sitemap</h1>
+                <p>This interactive diagram represents the structure of our website. Click on any page to navigate to it directly.</p>
+                
+                <div class="svg-container">
+                    <!-- SVG Sitemap -->
+                    <svg id="sitemap" viewBox="0 0 1000 600" aria-labelledby="sitemap-title" role="img">
+                        <title id="sitemap-title">Website Structure Sitemap</title>
+                        <desc>An interactive sitemap showing the hierarchical structure of the website's pages</desc>
+                        
+                        <!-- Root node (Home) connections -->
+                        <line x1="500" y1="80" x2="230" y2="180" class="connector" />
+                        <line x1="500" y1="80" x2="500" y2="380" class="connector" />
+                        <line x1="500" y1="80" x2="770" y2="180" class="connector" />
+                        
+                        <!-- About Section connections -->
+                        <line x1="230" y1="180" x2="100" y2="280" class="connector" />
+                        <line x1="230" y1="180" x2="230" y2="280" class="connector" />
+                        <line x1="230" y1="180" x2="360" y2="280" class="connector" />
+                        
+                        <!-- Profile Section connections -->
+                        <line x1="500" y1="380" x2="370" y2="480" class="connector" />
+                        <line x1="500" y1="380" x2="500" y2="480" class="connector" />
+                        <line x1="500" y1="380" x2="630" y2="480" class="connector" />
+                        
+                        <!-- Get Involved Section connections -->
+                        <line x1="770" y1="180" x2="640" y2="280" class="connector" />
+                        <line x1="770" y1="180" x2="770" y2="280" class="connector" />
+                        <line x1="770" y1="180" x2="900" y2="280" class="connector" />
+                        
+                        <!-- Home Node -->
+                        <a href="../Student_2/home.html" class="node-link" tabindex="0">
+                            <g class="node home-node">
+                                <rect x="450" y="40" width="100" height="40" rx="8" ry="8" />
+                                <text x="500" y="65">Home</text>
+                            </g>
+                        </a>
+                        
+                        <!-- Main Section Nodes -->
+                        <a href="about.html" class="node-link" tabindex="0">
+                            <g class="node section-node">
+                                <rect x="180" y="160" width="100" height="40" rx="8" ry="8" />
+                                <text x="230" y="185">About</text>
+                            </g>
+                        </a>
+                        
+                        <a href="profile.html" class="node-link" tabindex="0">
+                            <g class="node section-node">
+                                <rect x="450" y="360" width="100" height="40" rx="8" ry="8" />
+                                <text x="500" y="385">Profile</text>
+                            </g>
+                        </a>
+                        
+                        <a href="get-involved.html" class="node-link" tabindex="0">
+                            <g class="node section-node">
+                                <rect x="720" y="160" width="100" height="40" rx="8" ry="8" />
+                                <text x="770" y="185">Get Involved</text>
+                            </g>
+                        </a>
+                        
+                        <!-- About Subsection Nodes -->
+                        <a href="mission.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="50" y="260" width="100" height="40" rx="8" ry="8" />
+                                <text x="100" y="285">Mission</text>
+                            </g>
+                        </a>
+                        
+                        <a href="team.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="180" y="260" width="100" height="40" rx="8" ry="8" />
+                                <text x="230" y="285">Team</text>
+                            </g>
+                        </a>
+                        
+                        <a href="history.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="310" y="260" width="100" height="40" rx="8" ry="8" />
+                                <text x="360" y="285">History</text>
+                            </g>
+                        </a>
+                        
+                        <!-- Profile Subsection Nodes -->
+                        <a href="articles.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="320" y="460" width="100" height="40" rx="8" ry="8" />
+                                <text x="370" y="485">Articles</text>
+                            </g>
+                        </a>
+                        
+                        <a href="downloads.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="450" y="460" width="100" height="40" rx="8" ry="8" />
+                                <text x="500" y="485">Downloads</text>
+                            </g>
+                        </a>
+                        
+                        <a href="links.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="580" y="460" width="100" height="40" rx="8" ry="8" />
+                                <text x="630" y="485">Links</text>
+                            </g>
+                        </a>
+                        
+                        <!-- Get Involved Subsection Nodes -->
+                        <a href="volunteer.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="590" y="260" width="100" height="40" rx="8" ry="8" />
+                                <text x="640" y="285">Volunteer</text>
+                            </g>
+                        </a>
+                        
+                        <a href="donate.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="720" y="260" width="100" height="40" rx="8" ry="8" />
+                                <text x="770" y="285">Donate</text>
+                            </g>
+                        </a>
+                        
+                        <a href="contact.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="850" y="260" width="100" height="40" rx="8" ry="8" />
+                                <text x="900" y="285">Contact</text>
+                            </g>
+                        </a>
+                    </svg>
+                </div>
+            </section>
             </div>
-            <ul>
-                <li><a href="../Student_2/home.html">Home</a></li>
-                <li><a href="../student_1/volunteer.html">Volunteer</a></li>
-                <li><a href="../student_2/table.html">Data</a></li>
-                <li><a href="../student_3/feedback.html">Feedback</a></li>
-                <li><a href="../student_3/team.html">Team</a></li>
-                <li><a href="../student_4/profile.html">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="cyber-title">SITE MAP</h1>
-    
-    <div class="sitemap-container">
-        <a href="../Student_1/splash.html" class="sitemap-node" id="splash-screen">
-            Splash Screen
-            <div class="preview-container">
-                <img src="../images/Sitemap/Splash-preview.jpg" alt="Splash Screen Preview" class="preview-img">
-                <h3 class="preview-title">Splash Screen</h3>
-                <p class="preview-desc">The entry point to our climate action platform with animation and welcome message.</p>
-            </div>
-        </a>
-        
-        <div class="sitemap-row">
-            <a href="../Student_2/home.html" class="sitemap-node">
-                Home
-                <div class="preview-container">
-                    <img src="../images/Sitemap/Home-preview.jpg" alt="Home Page Preview" class="preview-img">
-                    <h3 class="preview-title">Home Page</h3>
-                    <p class="preview-desc">Main dashboard with climate action statistics and latest news.</p>
-                </div>
-            </a>
-            <a href="../Student_1/volunteer.html" class="sitemap-node">
-                Volunteer
-                <div class="preview-container">
-                    <img src="../images/Sitemap/Volunteer-preview.jpg" alt="Volunteer Page Preview" class="preview-img">
-                    <h3 class="preview-title">Volunteer Opportunities</h3>
-                    <p class="preview-desc">Find and sign up for climate action volunteer opportunities in your area.</p>
-                </div>
-            </a>
-            <a href="../Student_2/table.html" class="sitemap-node">
-                Data
-                <div class="preview-container">
-                    <img src="../images/Sitemap/Table-preview.jpg" alt="Data Page Preview" class="preview-img">
-                    <h3 class="preview-title">Climate Data</h3>
-                    <p class="preview-desc">Interactive visualizations of climate data and metrics.</p>
-                </div>
-            </a>
-            <a href="../Student_3/feedback.html" class="sitemap-node">
-                Feedback
-                <div class="preview-container">
-                    <img src="../images/Sitemap/Feedback-preview.jpg" alt="Feedback Page Preview" class="preview-img">
-                    <h3 class="preview-title">Feedback Form</h3>
-                    <p class="preview-desc">Submit your feedback and suggestions to improve our platform.</p>
-                </div>
-            </a>
-            <a href="../Student_3/team.html" class="sitemap-node">
-                Team
-                <div class="preview-container">
-                    <img src="../images/Sitemap/Team-preview.jpg" alt="Team Page Preview" class="preview-img">
-                    <h3 class="preview-title">Our Team</h3>
-                    <p class="preview-desc">Meet the team behind the climate action initiative.</p>
-                </div>
-            </a>
-            <a href="../Student_4/profile.html" class="sitemap-node">
-                Profile
-                <div class="preview-container">
-                    <img src="../images/Sitemap/profile-preview.jpg" alt="Profile Page Preview" class="preview-img">
-                    <h3 class="preview-title">User Profile</h3>
-                    <p class="preview-desc">Manage your personal profile, activities, and contributions.</p>
-                </div>
-            </a>
-        </div>
-        
-        <div class="sitemap-row">
-            <div class="content-container">
-                <div class="sitemap-node">Content Pages</div>
-                <div class="sitemap-column">
-                    <a href="../Student_1/content_ST1.html" class="sitemap-node">
-                        Student 1
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/Content_ST1-preview.jpg" alt="Student 1 Content Preview" class="preview-img">
-                            <h3 class="preview-title">Student 1 Content</h3>
-                            <p class="preview-desc">Educational content created by Student 1 about renewable energy.</p>
-                        </div>
-                    </a>
-                    <a href="../Student_2/content_ST2.html" class="sitemap-node">
-                        Student 2
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/Content_ST2-preview.jpg" alt="Student 2 Content Preview" class="preview-img">
-                            <h3 class="preview-title">Student 2 Content</h3>
-                            <p class="preview-desc">Educational content created by Student 2 about ocean conservation.</p>
-                        </div>
-                    </a>
-                    <a href="../Student_3/content_ST3.html" class="sitemap-node">
-                        Student 3
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/Content_ST3-preview.jpg" alt="Student 3 Content Preview" class="preview-img">
-                            <h3 class="preview-title">Student 3 Content</h3>
-                            <p class="preview-desc">Educational content created by Student 3 about sustainable living.</p>
-                        </div>
-                    </a>
-                    <a href="../Student_4/content_ST4.html" class="sitemap-node">
-                        Student 4
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/Content_ST4-preview.jpg" alt="Student 4 Content Preview" class="preview-img">
-                            <h3 class="preview-title">Student 4 Content</h3>
-                            <p class="preview-desc">Educational content created by Student 4 about climate policy.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="student-container">
-                <div class="sitemap-node">Student Pages</div>
-                <div class="sitemap-column">
-                    <a href="../Student_1/page_editor_ST1.html" class="sitemap-node">
-                        Student 1
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/PageEditor_ST1-previw.jpg" alt="Student 1 Profile Preview" class="preview-img">
-                            <h3 class="preview-title">Student 1 Profile</h3>
-                            <p class="preview-desc">Personal profile and projects of Student 1 in climate action.</p>
-                        </div>
-                    </a>
-                    <a href="../Student_2/page_editor_ST2.html" class="sitemap-node">
-                        Student 2
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/PageEditor_ST2-previw.jpg" alt="Student 2 Profile Preview" class="preview-img">
-                            <h3 class="preview-title">Student 2 Profile</h3>
-                            <p class="preview-desc">Personal profile and projects of Student 2 in climate action.</p>
-                        </div>
-                    </a>
-                    <a href="../Student_3/page_editor_ST3.html" class="sitemap-node">
-                        Student 3
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/PageEditor_ST3-previw.jpg" alt="Student 3 Profile Preview" class="preview-img">
-                            <h3 class="preview-title">Student 3 Profile</h3>
-                            <p class="preview-desc">Personal profile and projects of Student 3 in climate action.</p>
-                        </div>
-                    </a>
-                    <a href="../Student_4/page_editor_ST4.html" class="sitemap-node">
-                        Student 4
-                        <div class="preview-container">
-                            <img src="../images/Sitemap/PageEditor_ST4-previw.jpg" alt="Student 4 Profile Preview" class="preview-img">
-                            <h3 class="preview-title">Student 4 Profile</h3>
-                            <p class="preview-desc">Personal profile and projects of Student 4 in climate action.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+        </main>
+
+        <!-- Footer -->
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-name">
@@ -217,5 +216,6 @@
             <p>&copy; 2025 <b>United Nations</b>. All rights reserved. | Designed by <b>Group 2 SubGroup 4</b></p>
         </div>
     </footer>
+
 </body>
 </html>

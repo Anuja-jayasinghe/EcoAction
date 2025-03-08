@@ -62,4 +62,110 @@ tbody tr:hover {
         font-size: 14px;
         padding: 12px;
     }
+}/* table.css */
+/* Enhanced Table Styles */
+.table-logo {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 20px;
 }
+
+.table-header {
+    background: linear-gradient(45deg, #141e46, #41b06e) !important;
+    padding: 15px !important;
+}
+
+.thumbnail {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #8decb4;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+    cursor: help;
+}
+
+.data-link {
+    color: #41b06e;
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: underline dotted;
+}
+
+.data-link:hover {
+    color: #8decb4;
+}
+
+.trend {
+    background: rgba(141, 236, 180, 0.15) !important;
+    font-style: italic;
+}
+
+/* Enhanced Hover Effects */
+tr:hover td:not(.trend) {
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Animation */
+@keyframes pulse {
+    0% { background-color: normal; }
+    50% { background-color: rgba(65, 176, 110, 0.1); }
+    100% { background-color: normal; }
+}
+
+.highlight {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .thumbnail {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .table-logo {
+        width: 40px;
+    }
+}
+/* Critical trend styling */
+.critical {
+    background: rgba(255, 50, 50, 0.1) !important;
+    font-weight: bold;
+    color: #ff3232;
+}
+
+/* Icon animations */
+.icon {
+    transition: transform 0.2s ease;
+    cursor: help;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Thumbnail styling */
+.thumbnail {
+    border: 2px solid #41b06e;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+/* Data link hover effects */
+.data-link:hover {
+    background: rgba(65, 176, 110, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+@media (max-width: 600px) {
+    .icon { width: 18px; }
+    td { padding: 8px; }
+  }
