@@ -1,4 +1,10 @@
-/* Reset some default styles */
+:root {
+    --primary-color: #41B06E;
+    --secondary-color: #141E46;
+    --text-color: #141e46;
+    --background-color: #ffffff;
+}
+
 body, h1, h2, p, ul, li, a, table, th, td {
     margin: 0;
     padding: 0;
@@ -7,17 +13,22 @@ body, h1, h2, p, ul, li, a, table, th, td {
     border-collapse: collapse;
 }
 
-/* Apply the hero background to the entire site */
 body {
     font-family: Arial, sans-serif;
     background: url('../images/background.jpg') no-repeat center center/cover;
-    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-attachment:fixed; /* Keep the background fixed when scrolling */
     background-size: cover;
     color: #141e46; /* Dark Blue text color */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-/* Navigation Bar Styling */
-/* Updated Header Styles */
+h1, h2 {
+    color: #141E46;
+}
+
+/* ======== HEADER & NAVIGATION ======== */
 header {
     top: 0;
     width: 100%;
@@ -27,8 +38,16 @@ header {
     z-index: 1000;
     transition: all 0.3s ease;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #41B06E;
+    color: #FFF;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
 .logo {
     transition: transform 0.3s ease;
@@ -51,16 +70,42 @@ header {
     text-shadow: 0 0 15px rgba(29, 122, 67, 0.4);
 }
 
+header nav .logo h1 {
+    font-size: 2rem;
+    margin: 0;
+    display: inline;
+}
+
+header nav .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
 nav ul li a {
     position: relative;
     padding: 15px 25px !important;
     border-radius: 30px !important;
     overflow: hidden;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.1rem;
 }
 
 nav ul li a::before {
     content: '';
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -77,22 +122,44 @@ nav ul li a:hover::before {
 nav ul li a.active {
     background: rgba(65, 176, 110, 0.2) !important;
     border: 2px solid #41b06e;
+    border-bottom: 3px solid #8DECB4;
 }
 
 nav ul li a:hover {
     background: rgba(65, 176, 110, 0.1) !important;
 }
 
-/* Keep the hero section the same */
+/* ======== HERO SECTION ======== */
 .hero {
-    height: 450px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #141e46;
+    color: white;
     padding: 20px;
+    background-color: transparent;
+    padding: 80px 20px;
 }
+
+.hero a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
 #title {
     font-weight: bold;
     margin-bottom: 15px;
@@ -100,15 +167,64 @@ nav ul li a:hover {
     font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     justify-content: center;
-    
 }
-/* Main Content */
+
+.cta-button {
+    background-color: #41B06E;
+    color: #FFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #141E46;
+}
+
+/* ======== MAIN CONTENT ======== */
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Table Styling */
+/* Content Tiles */
+.content-tiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: white;
+    padding: 15px;
+    height: 500px;
+}
+
+.tile img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: rgba(19, 160, 38, 0.884);
+}
+
+/* ======== TABLE STYLES ======== */
 table {
     width: 80%;
     margin: 20px auto;
@@ -131,16 +247,19 @@ tr:nth-child(even) {
     background: #f4f4f4;
 }
 
-/* Footer Styles */
+/* ======== FOOTER STYLES ======== */
 .footer {
     background-color: #000000;
     color: white;
-padding-top: 10px;
+    padding-top: 10px;
     font-size: 16px;
     text-align: center;
 }
+
 #footer-text {
-    color: white;}
+    color: white;
+}
+
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +311,7 @@ padding-top: 10px;
     background-color: #000000;
     padding: 15px 0;
     font-size: 14px;
+<<<<<<< HEAD
 }
 
 /* General styles */
@@ -309,4 +429,27 @@ header nav ul li a.active {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     background-color: black;
     color: rgba(19, 160, 38, 0.884);
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+=======
+>>>>>>> 7f402e032b9ec496da72fb9e5640cbb4c1d07ce8
 }

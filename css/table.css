@@ -7,6 +7,12 @@ table {
     border-radius: 12px;
     overflow: hidden;
 }
+.table-logo {
+    width: 95px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
 .climate-title {
     font-size: 3rem;
     font-weight: bold;
@@ -14,7 +20,7 @@ table {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffffff;
-  }
+}
 
 th, td {
     padding: 14px;
@@ -30,6 +36,7 @@ th {
     font-weight: bold;
 }
 
+/* Row Styling */
 tbody tr:nth-child(even) {
     background: #e3fcef;
 }
@@ -39,6 +46,7 @@ tbody tr:hover {
     transition: 0.3s;
 }
 
+/* Icons and Thumbnails */
 .icon {
     font-size: 22px;
     margin-left: 5px;
@@ -51,15 +59,88 @@ tbody tr:hover {
     justify-content: center;
     width: 30px;
     height: 30px;
+    transition: transform 0.2s ease;
+    cursor: help;
 }
 
-/* Responsive Table */
-@media screen and (max-width: 768px) {
-    table {
-        width: 100%;
-    }
-    th, td {
-        font-size: 14px;
-        padding: 12px;
-    }
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.thumbnail {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #41b06e;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+    cursor: help;
+}
+
+/* Data Link Styling */
+.data-link {
+    color: #41b06e;
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: underline dotted;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.data-link:hover {
+    color: #8decb4;
+    background: rgba(65, 176, 110, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Table Header */
+.table-header {
+    background: linear-gradient(45deg,#41b06e , #141e46) !important;
+    padding: 15px !important;
+}
+
+/* Trend Highlighting */
+.trend {
+    background: rgba(141, 236, 180, 0.15) !important;
+    font-style: italic;
+}
+
+.critical {
+    background: rgba(255, 50, 50, 0.1) !important;
+    font-weight: bold;
+    color: #ff3232;
+}
+
+/* Hover Effects */
+tr:hover td:not(.trend) {
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Animation */
+@keyframes pulse {
+    0%, 100% { background-color: normal; }
+    50% { background-color: rgba(65, 176, 110, 0.1); }
+}
+
+.highlight {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table { width: 100%; }
+    th, td { font-size: 14px; padding: 12px; }
+    .thumbnail { width: 20px; height: 20px; }
+    .table-logo { width: 40px; }
+}
+
+@media (max-width: 600px) {
+    .icon { width: 18px; }
+    td { padding: 8px; }
 }

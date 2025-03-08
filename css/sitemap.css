@@ -1,188 +1,166 @@
-/* Title Styling */
-.cyber-title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    text-align: center;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #00f3ff, #ff00ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
-    margin-bottom: 2rem;
-    padding-top: 20px;
-    width: 100%;
+/* Global Styles */
+:root {
+    --primary-color: #2e8b57;
+    --secondary-color: #3cb371;
+    --accent-color: #f0f8ff;
+    --text-color: #333;
+    --light-gray: #f4f4f4;
+    --medium-gray: #ddd;
+    --dark-gray: #666;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --border-radius: 8px;
+    --node-fill: #ffffff;
+    --node-stroke: #000000;
+    --node-hover: #e6f7ff;
+    --node-focus: #f39c12;
+    --home-node-fill: #ffffff;
+    --section-node-fill: #ffffff;
+    --connector-color: #000000;
 }
 
-/* Sitemap Container */
-.sitemap-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
     max-width: 1200px;
-    flex-grow: 1; /* Ensure content takes up available space */
-}
-
-/* Splash Screen at the Top */
-#splash-screen {
-    background: #ff00ff;
-    color: white;
-    font-weight: bold;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 100%;
-    max-width: 250px;
-    position: relative;
 }
 
-/* Row Layout for Navigation Links */
-.sitemap-row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-    overflow-x: visible; /* Allows horizontal scrolling if necessary */
-    padding-bottom: 0; /* Remove extra space */
-    margin-bottom: 0;  /* Avoid pushing footer */
+/* Main Content Styles */
+main {
+    padding: 20px 0;
 }
 
-/* Ensure nodes inside the row are evenly spaced */
-.sitemap-row .sitemap-node {
-    flex: 1;
-    min-width: 120px; /* Adjust this value if needed */
-    text-align: center;
-}
-
-/* Container styling */
-.content-container,
-.student-container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
+.sitemap-section {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 30px;
     margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
 }
 
-/* Individual Column */
-.sitemap-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-/* Node Styling */
-.sitemap-node {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
     text-align: center;
-    font-size: clamp(0.9rem, 3vw, 1.2rem);
-    font-weight: bold;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: 0.3s ease;
-    position: relative;
-    width: 100%;
 }
 
-/* Main node styling in containers */
-.content-container > .sitemap-node,
-.student-container > .sitemap-node {
-    background: #00f3ff;
-    color: black;
-    margin-bottom: 10px;
+.sitemap-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--dark-gray);
 }
 
-/* Sub-node styling in columns */
-.sitemap-column .sitemap-node {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    font-size: 0.9rem;
-    border: 1px solid #00f3ff;
-}
-
-.sitemap-node:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #ff00ff;
-    box-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
-    z-index: 10;
-}
-
-/* Preview container */
-.preview-container {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    max-width: 90vw;
-    background: #1a1a1a;
-    border: 2px solid #00f3ff;
-    border-radius: 10px;
-    padding: 10px;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
-}
-
-.sitemap-node:hover .preview-container {
-    opacity: 1;
-    visibility: visible;
-}
-
-.preview-img {
+/* SVG Container Styles */
+.svg-container {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 0 auto 40px;
+    overflow: visible;
 }
 
-.preview-title {
-    color: #00f3ff;
-    margin-bottom: 5px;
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid var(--medium-gray);
 }
 
-.preview-desc {
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: #ccc;
-    text-transform: none;
+/* SVG Element Styles */
+.connector {
+    stroke: var(--connector-color);
+    stroke-width: 2;
+    transition: stroke 0.3s ease;
 }
 
-/* Media Queries for Responsiveness */
+.node rect {
+    fill: var(--node-fill);
+    stroke: var(--node-stroke);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.node text {
+    text-anchor: middle;
+    font-size: 14px;
+    fill: var(--text-color);
+    font-weight: 500;
+    pointer-events: none; /* Makes text not interfere with click events */
+}
+
+.home-node rect {
+    fill: var(--home-node-fill);
+    stroke: var(--node-stroke);
+    stroke-width: 2;
+}
+
+.section-node rect {
+    fill: var(--section-node-fill);
+    stroke: var(--node-stroke);
+    stroke-width: 2;
+}
+
+/* Interactive Styles */
+.node-link:hover .node rect {
+    fill: var(--node-hover);
+    stroke: var(--primary-color);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Connect the hover state to lines */
+.node-link:hover + .connector,
+.node-link:hover ~ .connector {
+    stroke: var(--primary-color);
+    stroke-width: 3;
+}
+
+/* For keyboard navigation */
+.node-link:focus {
+    outline: none;
+}
+
+.node-link:focus .node rect {
+    fill: var(--node-focus);
+    stroke: #e67e22;
+    stroke-width: 3;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+}
+/* Responsive Design */
 @media (max-width: 768px) {
-    .sitemap-row {
+    .main-menu {
         flex-direction: column;
         align-items: center;
     }
 
-    .sitemap-node {
-        max-width: 300px;
+    .main-menu li {
+        margin: 10px 0;
     }
 
-    .content-container,
-    .student-container {
-        max-width: 280px;
+    .svg-container {
+        overflow-x: auto;
+    }
+    
+    /* Adjust sitemap visibility on smaller screens */
+    #sitemap {
+        min-width: 800px; /* Ensure minimum width to prevent excessive compression */
     }
 }
 
-@media (max-width: 480px) {
-    .sitemap-node {
-        font-size: 0.9rem;
-        padding: 12px;
-    }
-
-    .preview-container {
-        width: 240px;
-    }
+/* Ensure accessibility */
+.node-link:focus-visible .node rect {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
 }
