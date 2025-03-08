@@ -67,6 +67,9 @@ body {
     background-color: var(--primary-color);
     color: white;
 }
+profilecontent{
+    width: 80%;
+}
 
 /* Card Styles */
 .card {

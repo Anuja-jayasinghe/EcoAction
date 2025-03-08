@@ -9,160 +9,168 @@
     <link rel="stylesheet" href="../css/sitemap.css">
 </head>
 <body>
-        <!-- Header Section -->
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="../images/mainLogo.png" alt="Climate Logo">
-                    <a href="../Student_2/home.html"> <h1>EcoAction</h1></a>
-                </div>
-                <ul>
-                    <li><a href="../Student_2/home.html" class="active">Home</a></li>
-                    <li><a href="../student_1/volunteer.html">Volunteer</a></li>
-                    <li><a href="../student_2/table.html">Data</a></li>
-                    <li><a href="../student_3/feedback.html">Feedback</a></li>
-                    <li><a href="../student_3/team.html">Team</a></li>
-                    <li><a href="../student_4/profile.html">Profile</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/mainLogo.png" alt="Climate Logo">
+                <a href="../Student_2/home.html"> <h1>EcoAction</h1></a>
+            </div>
+            <ul>
+                <li><a href="../Student_2/home.html" >Home</a></li>
+                <li><a href="../student_1/volunteer.html">Volunteer</a></li>
+                <li><a href="../student_2/table.html">Data</a></li>
+                <li><a href="../student_3/feedback.html">Feedback</a></li>
+                <li><a href="../student_3/team.html">Team</a></li>
+                <li><a href="../student_4/profile.html" class="active">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
 
         <!-- Main Content -->
         <main>
-            <div class="container">
             <section class="sitemap-section">
                 <h1>Website Sitemap</h1>
                 <p>This interactive diagram represents the structure of our website. Click on any page to navigate to it directly.</p>
                 
                 <div class="svg-container">
                     <!-- SVG Sitemap -->
-                    <svg id="sitemap" viewBox="0 0 1000 600" aria-labelledby="sitemap-title" role="img">
+                    <svg id="sitemap" viewBox="0 0 1000 700" aria-labelledby="sitemap-title" role="img">
                         <title id="sitemap-title">Website Structure Sitemap</title>
                         <desc>An interactive sitemap showing the hierarchical structure of the website's pages</desc>
                         
-                        <!-- Root node (Home) connections -->
-                        <line x1="500" y1="80" x2="230" y2="180" class="connector" />
-                        <line x1="500" y1="80" x2="500" y2="380" class="connector" />
-                        <line x1="500" y1="80" x2="770" y2="180" class="connector" />
+                        <!-- All connecting lines have been removed -->
                         
-                        <!-- About Section connections -->
-                        <line x1="230" y1="180" x2="100" y2="280" class="connector" />
-                        <line x1="230" y1="180" x2="230" y2="280" class="connector" />
-                        <line x1="230" y1="180" x2="360" y2="280" class="connector" />
-                        
-                        <!-- Profile Section connections -->
-                        <line x1="500" y1="380" x2="370" y2="480" class="connector" />
-                        <line x1="500" y1="380" x2="500" y2="480" class="connector" />
-                        <line x1="500" y1="380" x2="630" y2="480" class="connector" />
-                        
-                        <!-- Get Involved Section connections -->
-                        <line x1="770" y1="180" x2="640" y2="280" class="connector" />
-                        <line x1="770" y1="180" x2="770" y2="280" class="connector" />
-                        <line x1="770" y1="180" x2="900" y2="280" class="connector" />
-                        
-                        <!-- Home Node -->
-                        <a href="../Student_2/home.html" class="node-link" tabindex="0">
+                        <!-- Top Node (Home) -->
+                        <a href="../Student_1/splash.html" class="node-link" tabindex="0">
                             <g class="node home-node">
-                                <rect x="450" y="40" width="100" height="40" rx="8" ry="8" />
-                                <text x="500" y="65">Home</text>
+                                <rect x="430" y="40" width="140" height="60" rx="10" ry="10" />
+                                <text x="500" y="75">SPLASH SCREEN</text>
                             </g>
                         </a>
                         
-                        <!-- Main Section Nodes -->
-                        <a href="about.html" class="node-link" tabindex="0">
+                        <!-- Second Row Nodes -->
+                        <a href="../Student_2/home.html" class="node-link" tabindex="0">
                             <g class="node section-node">
-                                <rect x="180" y="160" width="100" height="40" rx="8" ry="8" />
-                                <text x="230" y="185">About</text>
+                                <rect x="130" y="160" width="140" height="60" rx="10" ry="10" />
+                                <text x="200" y="195">HOME</text>
                             </g>
                         </a>
                         
-                        <a href="profile.html" class="node-link" tabindex="0">
+                        <a href="../Student_1/volunteer.html"node-link" tabindex="0">
                             <g class="node section-node">
-                                <rect x="450" y="360" width="100" height="40" rx="8" ry="8" />
-                                <text x="500" y="385">Profile</text>
+                                <rect x="430" y="160" width="140" height="60" rx="10" ry="10" />
+                                <text x="500" y="195">VOLUNTEER</text>
                             </g>
                         </a>
                         
-                        <a href="get-involved.html" class="node-link" tabindex="0">
+                        <!-- New Box Under Section 2 -->
+                        <a href="../Student_2/table.html" class="node-link" tabindex="0">
+                            <g class="node subnode">
+                                <rect x="430" y="260" width="140" height="60" rx="10" ry="10" />
+                                <text x="500" y="295">DATA</text>
+                            </g>
+                        </a>
+                        
+                        <a href="../Student_3/feedback.html" class="node-link" tabindex="0">
                             <g class="node section-node">
-                                <rect x="720" y="160" width="100" height="40" rx="8" ry="8" />
-                                <text x="770" y="185">Get Involved</text>
+                                <rect x="730" y="160" width="140" height="60" rx="10" ry="10" />
+                                <text x="800" y="195">FEEDBACK</text>
                             </g>
                         </a>
                         
-                        <!-- About Subsection Nodes -->
-                        <a href="mission.html" class="node-link" tabindex="0">
+                        <!-- Third Row Nodes -->
+                        <a href="../Student_3/team.html" class="node-link" tabindex="0">
                             <g class="node subnode">
-                                <rect x="50" y="260" width="100" height="40" rx="8" ry="8" />
-                                <text x="100" y="285">Mission</text>
+                                <rect x="130" y="260" width="140" height="60" rx="10" ry="10" />
+                                <text x="200" y="295">TEAM</text>
                             </g>
                         </a>
                         
-                        <a href="team.html" class="node-link" tabindex="0">
+                        <a href="../Student_3/team.html" class="node-link" tabindex="0">
                             <g class="node subnode">
-                                <rect x="180" y="260" width="100" height="40" rx="8" ry="8" />
-                                <text x="230" y="285">Team</text>
+                                <rect x="730" y="260" width="140" height="60" rx="10" ry="10" />
+                                <text x="800" y="295">PROFILE</text>
                             </g>
                         </a>
                         
-                        <a href="history.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="310" y="260" width="100" height="40" rx="8" ry="8" />
-                                <text x="360" y="285">History</text>
+                        <!-- First column of multiple items -->
+                        
+                            <g class="node item-node">
+                                <rect x="90" y="360" width="220" height="40" rx="10" ry="10" />
+                                <text x="200" y="385">CONTENT PAGES</text>
+                            </g>
+                        
+                        
+                        <a href="../Student_1/content_ST1.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="90" y="410" width="220" height="40" rx="10" ry="10" />
+                                <text x="200" y="435">STUDENT 1</text>
                             </g>
                         </a>
                         
-                        <!-- Profile Subsection Nodes -->
-                        <a href="articles.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="320" y="460" width="100" height="40" rx="8" ry="8" />
-                                <text x="370" y="485">Articles</text>
+                        <a href="../Student_2/content_ST2.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="90" y="460" width="220" height="40" rx="10" ry="10" />
+                                <text x="200" y="485">STUDENT 2</text>
                             </g>
                         </a>
                         
-                        <a href="downloads.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="450" y="460" width="100" height="40" rx="8" ry="8" />
-                                <text x="500" y="485">Downloads</text>
+                        <a href="../Student_3/content_ST3.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="90" y="510" width="220" height="40" rx="10" ry="10" />
+                                <text x="200" y="535">STUDENT 3</text>
                             </g>
                         </a>
                         
-                        <a href="links.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="580" y="460" width="100" height="40" rx="8" ry="8" />
-                                <text x="630" y="485">Links</text>
+                        <a href="../Student_4/content_ST4.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="90" y="560" width="220" height="40" rx="10" ry="10" />
+                                <text x="200" y="585">STUDENT 4</text>
                             </g>
                         </a>
                         
-                        <!-- Get Involved Subsection Nodes -->
-                        <a href="volunteer.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="590" y="260" width="100" height="40" rx="8" ry="8" />
-                                <text x="640" y="285">Volunteer</text>
+                        <!-- Second column of multiple items -->
+                            <g class="node item-node">
+                                <rect x="690" y="360" width="220" height="40" rx="10" ry="10" />
+                                <text x="800" y="385">STUDENT PAGES</text>
+                            </g>
+                        
+                        <a href="../Student_1/page_editor_ST1.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="690" y="410" width="220" height="40" rx="10" ry="10" />
+                                <text x="800" y="435">STUDENT 1</text>
                             </g>
                         </a>
                         
-                        <a href="donate.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="720" y="260" width="100" height="40" rx="8" ry="8" />
-                                <text x="770" y="285">Donate</text>
+                        <a href="../Student_2/page_editor_ST2.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="690" y="460" width="220" height="40" rx="10" ry="10" />
+                                <text x="800" y="485">STUDENT 2</text>
                             </g>
                         </a>
                         
-                        <a href="contact.html" class="node-link" tabindex="0">
-                            <g class="node subnode">
-                                <rect x="850" y="260" width="100" height="40" rx="8" ry="8" />
-                                <text x="900" y="285">Contact</text>
+                        <a href="../Student_3/page_editor_ST3.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="690" y="510" width="220" height="40" rx="10" ry="10" />
+                                <text x="800" y="535">STUDENT 3</text>
+                            </g>
+                        </a>
+                        
+                        <a href="../Student_4/page_editor_ST4.html" class="node-link" tabindex="0">
+                            <g class="node item-node">
+                                <rect x="690" y="560" width="220" height="40" rx="10" ry="10" />
+                                <text x="800" y="585">STUDENT 4</text>
                             </g>
                         </a>
                     </svg>
                 </div>
             </section>
-            </div>
         </main>
 
-        <!-- Footer -->
-        <p class="top"><a href="#top">Go top</a></p>
+    </div>
+    <p class="top"><a href="#top">Go top</a></p>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-name">
@@ -216,6 +224,5 @@
             <p>&copy; 2025 <b>United Nations</b>. All rights reserved. | Designed by <b>Group 2 SubGroup 4</b></p>
         </div>
     </footer>
-
 </body>
 </html>
