@@ -24,16 +24,22 @@
             </ul>
         </nav>
     </header>
-
-    <section class="stud">
-        <h2>Anuja Jayasinghe: Student 2</h2>
-    </section>
+    <div class="profile-card">
+        <div class="profile-section profile-info">
+            <div class="profile-avatar">
+                <img src="../images/pageEditor/student2.png" alt="Student Avatar">
+            </div>
+            <div class="profile-details">
+                <h2>Anuja Jayasinghe</h2>
+                <div class="role-badge">Student 2</div>
+            </div>
+        </div>
 
     <div class="container">
         <main>
             <section>
                 <h2 id="homevalidation">Home Page Validation Report</h2>
-                <p>The W3C validator identified minor semantic issues in the HTML structure, such as missing alt attributes for decorative images. After adding aria-labels and adjusting sectioning elements, the page achieved full compliance. CSS validation required resolving a margin-collapse conflict in the grid layout.</p>
+                <p>Fixed HTML structure issues like missing image descriptions. Adjusted CSS layout to resolve spacing conflicts. Now fully passes validation checks.</p>
                 <img src="../images/validator/home-validation.jpg" alt="Home Page Validation">
                 <h3>Back to Page Editor</h3>
                 <p><a href="../Student_2/page_editor_ST2.html#home">Link to Home Page Section in Editor</a></p>
@@ -41,7 +47,7 @@
 
             <section>
                 <h2 id="tableValidation">Table Page Validation Report</h2>
-                <p>Initial validation flagged deprecated border attributes in the table. These were replaced with CSS border properties. The JSON data feed for interactive filtering initially caused a parsing error due to trailing commas, which were corrected. All accessibility checks passed after adding table captions.</p>
+                <p>Replaced old table styling with modern CSS. Fixed data feed errors and added clear table descriptions. Passes all accessibility requirements.</p>
                 <img src="../images/validator/table-validation.jpg" alt="Table Page Validation">
                 <h3>Back to Page Editor</h3>
                 <p><a href="../Student_2/page_editor_ST2.html#table">Link to Table Page Section in Editor</a></p>
@@ -49,7 +55,7 @@
 
             <section>
                 <h2 id="contentValidation">Content Page Validation Report</h2>
-                <p>The content page had an invalid &lt;article&gt; nesting structure. Restructuring the semantic HTML and removing redundant divs resolved validation errors. CSS flexbox properties were adjusted to eliminate vendor prefix warnings. All ARIA roles now pass WCAG 2.1 checks.</p>
+                <p>Simplified HTML structure by fixing element organization. Updated CSS styling for better compatibility. Meets all accessibility standards.</p>
                 <img src="../images/validator/content_ST2-validation.jpg" alt="Content Page Validation">
                 <h3>Back to Page Editor</h3>
                 <p><a href="../Student_2/page_editor_ST2.html#content">Link to Content Page Section in Editor</a></p>
@@ -88,6 +94,7 @@
                         <li><a href="../Student_4/sitemap.html">Sitemap page</a></li>
                         <li><a href="../Student_4/content_ST4.html">Content page</a></li>
         </aside>
+    </div>
     </div>
 
     <footer class="footer">
