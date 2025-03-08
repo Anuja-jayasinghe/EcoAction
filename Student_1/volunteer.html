@@ -133,44 +133,44 @@
         </div>
     </section>
 
-    <section class="review-section">
-        <h2>Program Ratings & Reviews</h2>
-        <div class="rating-summary">
-            <h3>Overall Rating: 4.5/5</h3>
-            <p>Total Reviews: 125</p>
-        </div>
-    
-        <div class="review-cards">
+    <div class="reviews-container">
+        <h2>Volunteer Reviews</h2>
+        <div class="reviews-grid">
             <div class="review-card">
-                <h4>Great Experience!</h4>
+                <h3>Great Experience!</h3>
+                <div class="review-rating">Rating: ★★★★☆ (4/5)</div>
                 <p>Duration: 3 weeks, worth every minute! The activities were well-organized, and I learned a lot.</p>
                 <p><strong>Reviewer:</strong> John Doe | <strong>Date:</strong> March 5, 2025</p>
             </div>
+    
             <div class="review-card">
-                <h4>Life-changing!</h4>
-                <p>The marine conservation project really opened my eyes to the environmental issues. Highly recommend!</p>
+                <h3>Life-changing!</h3>
+                <div class="review-rating">Rating: ★★★★★ (5/5)</div>
+                <p>The marine conservation project really opened my eyes to environmental issues. Highly recommend!</p>
                 <p><strong>Reviewer:</strong> Jane Smith | <strong>Date:</strong> February 20, 2025</p>
             </div>
     
-            <!-- Additional reviews will be hidden initially -->
-            <div class="additional-reviews">
-                <div class="review-card">
-                    <h4>Amazing Opportunity!</h4>
-                    <p>This was an amazing opportunity to contribute to environmental efforts. I learned so much about sustainable farming practices.</p>
-                    <p><strong>Reviewer:</strong> Sarah Williams | <strong>Date:</strong> January 15, 2025</p>
-                </div>
-                <div class="review-card">
-                    <h4>Highly Educational!</h4>
-                    <p>Spent 4 weeks volunteering in forest conservation. It was a highly educational and rewarding experience. Definitely worth it!</p>
-                    <p><strong>Reviewer:</strong> Michael Lee | <strong>Date:</strong> December 30, 2024</p>
-                </div>
+            <div class="review-card">
+                <h3>Amazing Opportunity!</h3>
+                <div class="review-rating">Rating: ★★★★☆ (4.5/5)</div>
+                <p>This was an amazing opportunity to contribute to environmental efforts. I learned so much about sustainable farming practices.</p>
+                <p><strong>Reviewer:</strong> Sarah Williams | <strong>Date:</strong> January 15, 2025</p>
             </div>
     
-            <!-- Buttons for toggling the reviews -->
-            <a href="#" class="see-more" id="seeMoreBtn">See More Reviews</a>
-            <a href="#" class="see-less" id="seeLessBtn" style="display: list-item;">See Less Reviews</a>
+            <div class="review-card">
+                <h3>Highly Educational!</h3>
+                <div class="review-rating">Rating: ★★★★☆ (4/5)</div>
+                <p>Spent 4 weeks volunteering in forest conservation. It was a highly educational and rewarding experience.</p>
+                <p><strong>Reviewer:</strong> Michael Lee | <strong>Date:</strong> December 30, 2024</p>
+            </div>
         </div>
-    </section>
+    
+        <!-- Button Container -->
+        <div class="button-container">
+            <button id="seemorereviews">See More Reviews</button>
+        </div>
+    </div>
+    
     
 
     <!-- Feedback Form -->
@@ -196,7 +196,7 @@
         </form>
     </section>
 
-    <p class="top"><a href="#top">Go top</a></p>
+    <a href="#" class="go-to-top" aria-label="Go to top"></a>
 
     <footer class="footer">
         <div class="footer-container">
@@ -285,38 +285,6 @@
             programCards.innerHTML = '';
             filteredCards.forEach(card => programCards.appendChild(card));
         }
-
-        // Get the "See More Reviews" button, "See Less Reviews" button, and the additional reviews section
-        
-        const seeMoreBtn = document.getElementById('seeMoreBtn');
-        const seeLessBtn = document.getElementById('seeLessBtn');
-        const additionalReviews = document.querySelector('.additional-reviews');
-
-        // Initially hide the additional reviews
-        additionalReviews.style.display = 'none';
-
-        // Add event listener for the "See More Reviews" button
-        seeMoreBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            
-            // Show additional reviews and display the "See Less Reviews" button
-            additionalReviews.style.display = 'block';
-            seeMoreBtn.style.display = 'none';  // Hide "See More Reviews"
-            seeLessBtn.style.display = 'inline-block';  // Show "See Less Reviews"
-        });
-
-        // Add event listener for the "See Less Reviews" button
-        seeLessBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            
-            // Hide additional reviews and display the "See More Reviews" button
-            additionalReviews.style.display = 'none';
-            seeLessBtn.style.display = 'none';  // Hide "See Less Reviews"
-            seeMoreBtn.style.display = 'inline-block';  // Show "See More Reviews"
-        });
-
-        
-
     </script>
 
 </body>

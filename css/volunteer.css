@@ -101,25 +101,6 @@ body {
     margin: 10px 0;
 }
 
-.apply-btn {
-    background-color: rgb(93, 185, 150);
-    color: rgb(227, 240, 175);
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-    width: 100%;
-}
-
-.apply-btn:hover {
-    background-color: rgb(93, 185, 150);
-    transform: scale(1.05);
-}
-
-
-
 .intro-text {
     text-align: center;
     margin: 20px 0;
@@ -208,87 +189,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Review Section Styling */
-.review-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-
-.review-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.rating-summary {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.rating-summary h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-}
-
-.rating-summary p {
-    font-size: 1rem;
-    color: #7f8c8d;
-}
-
-.review-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.review-card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.review-card:hover {
-    transform: scale(1.05);
-}
-
-.review-card h4 {
-    font-size: 1.25rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.review-card p {
-    font-size: 1rem;
-    color: #7f8c8d;
-}
-
-.review-card strong {
-    color: #34495e;
-}
-
-/* See More Reviews Link Styling */
-.see-more {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.see-more:hover {
-    color: #2980b9;
-    text-decoration: underline;
-}
-
 /* Feedback Form Styling */
 .feedback-form {
     background-color: #fff;
@@ -370,7 +270,131 @@ body {
     background-color: #c0392b;
 }
 
+.go-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #41b06e;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    opacity: 0.7;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
 
+.go-to-top::after {
+    content: '▲';
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.go-to-top:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.1);
+    background: #141e46;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.go-to-top:hover::after {
+    transform: translateY(-3px);
+}
+
+/* Container for the reviews section */
+.reviews-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the reviews section */
+.reviews-container h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual review card */
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Review card hover effect */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title of each review */
+.review-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Review summary (rating) */
+.review-card .review-rating {
+    font-size: 1.2em;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+/* Review description text */
+.review-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Reviewer and date details */
+.review-card p strong {
+    color: #333;
+}
+
+/* Button container */
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Style for the 'See More Reviews' button */
+#seemorereviews {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#seemorereviews:hover {
+    background-color: #0056b3;
+}
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
