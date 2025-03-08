@@ -11,6 +11,11 @@
     --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     --border-radius: 8px;
 }
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 70%;
+}
 
 * {
     margin: 0;

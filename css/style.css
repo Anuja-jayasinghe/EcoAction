@@ -276,6 +276,11 @@ tr:nth-child(even) {
     width: 100%;
 }
 
+#footer-name {
+    color: white;
+    text-align: left;
+}
+
 .link-section {
     flex: 1 1 200px;
     margin: 10px;
