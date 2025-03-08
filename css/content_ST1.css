@@ -1,4 +1,4 @@
-/* Centered Content for #climate-action-volunteer */
+/* Centered Content for #carbon-farming */
 .container {
     background: rgba(255, 255, 255, 0.6); /* Transparent white background */
     padding: 30px;
@@ -29,64 +29,208 @@
     padding-bottom: 5px;
 }
 
-.container h3 {
-    font-size: 1.6em;
-    color: #22096e;
-    margin-top: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #27ae60;
-    padding-bottom: 5px;
-}
-
 /* Paragraph Styling */
 .container p {
     text-align: center;  /* Center the text */
     font-size: 1.2em;
     color: #192735;
     margin-bottom: 15px;
-}
-.image-placeholder img {
-    object-fit: cover; /* Ensures the full image is shown within the container */
-    height: 50%;
-    width: 50%; /* Reduced from 80% to 40% */
-    overflow: hidden;
-    border-radius: 5px;
-    transition: opacity 0.3s ease;
-    margin: 0 auto; /* Center the image */
-    display: flex; /* Center the image inside the container */
-    justify-content: center;
-    align-items: center;
-}
-.image-placeholder1 img {
-    object-fit: cover; /* Ensures the full image is shown within the container */
-    height: 60%;
-    width: 60%; /* Reduced from 80% to 40% */
-    overflow: hidden;
-    border-radius: 5px;
-    transition: opacity 0.3s ease;
-    margin: 0 auto; /* Center the image */
-    display: flex; /* Center the image inside the container */
-    justify-content: center;
-    align-items: center;
-}
-.top {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-}
-        
-.top a {
-    padding: 10px 20px; /* Adds padding for button-like feel */
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 20px; /* Rounds the corners */
-    font-size: 12px; /* Adjust font size */
-    font-weight: bold; /* Make the text stand out */
+    font-weight: 500;
 }
 
-.top a:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+.container h3 {
+    font-size: 1.5em;
+    color: #224161;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Quick Links Styling */
+.quick-links-container {
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.quick-links-title {
+    font-size: 35px;
+    color: #f8faf8;
+    margin-bottom: 15px;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    top: 120px;
+}
+
+.quick-links li {
+    margin: 5px;
+}
+
+.quick-links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(77, 77, 77);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.quick-links a:hover {
+    background: #64eb6d;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #000000;
+    transform: scale(1.02);
+}
+
+/* Hover effect on cells */
+td:hover{
+    background-color: #a0ffa9;
+    transform: scale(1.05);
+}
+
+th:hover {
+    color: #484848;
+    background-color: #a0ffa9;
+    transform: scale(1.05);
+}
+
+/* Alternate row colors for better readability */
+tr:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Table border animation */
+table {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+table:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+#footer-text {
+    color: white;}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.link-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.link-section h4 {
+    border-bottom: 2px solid #41b06e;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.link-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-section ul li {
+    margin: 5px 0;
+}
+
+.link-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-section ul li a:hover {
+    color: #41b06e;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
 }
