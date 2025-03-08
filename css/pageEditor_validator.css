@@ -115,7 +115,7 @@ img{
 }
 .profile-card {
     background: rgba(255, 255, 255, 0.9);
-    width: 71%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -170,7 +170,7 @@ img{
 .footer {
     background-color: #000000;
     color: white;
-padding-top: 10px;
+    padding-top: 10px;
     font-size: 16px;
     text-align: center;
 }
