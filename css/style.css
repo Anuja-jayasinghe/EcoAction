@@ -313,23 +313,42 @@ header nav ul li a.active {
     color: rgba(19, 160, 38, 0.884);
 }
 
-.top {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-}
-        
-.top a {
-    padding: 10px 20px; /* Adds padding for button-like feel */
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 20px; /* Rounds the corners */
-    font-size: 12px; /* Adjust font size */
-    font-weight: bold; /* Make the text stand out */
+/* Add to your CSS file */
+html {
+    scroll-behavior: smooth;
 }
 
-.top a:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+.go-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #41b06e;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    opacity: 0.7;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.go-to-top::after {
+    content: '▲';
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.go-to-top:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.1);
+    background: #141e46;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.go-to-top:hover::after {
+    transform: translateY(-3px);
 }
