@@ -224,6 +224,20 @@ table:hover {
     font-size: 14px;
 }
 
+/* Image Styling */
+.image-holder img {
+    width: 30%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.image-placeholder img{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
 /* Responsive table */
 @media screen and (max-width: 768px) {
     table {
