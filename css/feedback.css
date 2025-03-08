@@ -12,45 +12,56 @@ main{
     color: #141E46;
 }
 
-h1{
+h2{
     text-align: center;
-    color: #41B06E;
+    color: #141E46;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    background: #fff;
+    align-items: flex-end;
 }
 
 fieldset{
-    border: 2px solid #8DECB4;
-    padding: 15px;
+    border: 2px solid #249553;
+    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 15px;
-    background: #FFF5E0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 legend{
     font-weight: bold;
-    color: #41B06E;
+    color: #1b743f;
 }
 
 label{
     font-weight: bold;
-    display: block;
-    margin: 10px 0 5px;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
     color: #141E46;
+    text-align: left;
+    width: 100%;
+    padding: 5px;
 }
 
 input,textarea,select{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #8DECB4;
+    border: 1px solid #44ae7c;
     border-radius: 5px;
     font-size: 16px;
-    background: #FFF5E0;
+    background: #fff;
     color: #141E46;
+    text-align: left;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -63,31 +74,57 @@ input:focus, textarea:focus, select:focus{
     font-size: 14px;
     color: #666;
     margin-top: -8px;
+    text-align: right;
+    width: 100%;
 }
 
 .rating{
     display: flex;
-    gap: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #41B06E;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
-.rating span:hover{
-    transform: scale(1.2);
-    transition: 0.2s;
-    color: #141E46;
+.rating input{
+    display: none;
+}
+
+.rating label{
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.rating input:checked ~label,
+.rating label:hover,
+.rating label:hover ~label{
+    color: gold;
+}
+
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-group input[type="radio"]{
+    margin: 10px;
+    width: auto;
 }
 
 button{
     background: #41B06E;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 5px;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover{
@@ -109,3 +146,4 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
+

@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Action: Feedback Form</title>
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Feedback Form</title>
     <link rel="stylesheet" href="../css/feedback.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -20,25 +19,18 @@
                 <li><a href="../student_1/volunteer.html">Volunteer</a></li>
                 <li><a href="../student_2/table.html">Data</a></li>
                 <li><a href="../student_3/feedback.html" class="active">Feedback</a></li>
-                <li><a href="../student_3/team.html">Team</a></li>
                 <li><a href="../student_4/profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Feedback Form</h1>
+        <h2>Feedback Form</h2>
         <form action="#" method="post">
             <!--Personal Details-->
             <fieldset>
                 <legend>Personal Details</legend>
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
-
-                <label>Gender:</label>
-                <input type="radio" name="gender" id="female" value="female" required>
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="male" value="male" required>
-                <label for="male">Male</label>
 
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required title="Please enter a valid email address.">
@@ -47,31 +39,42 @@
                 <input  type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required title="Please enter a 10 digit phone number.">
 
                 <label for="address">Address:</label>
-                <textarea type="address" id="address" name="address" rows="3" maxlength="200" title="Enter your address."></textarea>
+                <textarea id="address" name="address" rows="3" maxlength="200" title="Enter your address."></textarea>
             </fieldset>
 
             <!--Feedback Section-->
             <fieldset>
                 <legend>Feedback</legend>
                 <label for="comment">Comment or Message:</label>
-                <textarea id="comment" name="comment" rows="4" maxlength="250"
-                    oninput="charCount.textContent=(250-this.value.length)+'characters reamaining'"></textarea>
-                <p id="char-count">250 characters remaining</p>
+                <textarea id="comment" name="comment" rows="4" maxlength="250" required></textarea>
+                <p id="charCount">250 characters remaining</p>
 
-                <label for="rating">Rate Our Efforts</label>
+                <label>Rate Our Efforts</label>
                 <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excellent"></label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good"></label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good"></label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Fair"></label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Poor"></label>  
-                </div>
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <label for="rating5">&#9733;</label>
 
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4">&#9733;</label>
+
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3">&#9733;</label>
+
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2">&#9733;</label>
+
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <label for="rating1">&#9733;</label>
+                </div>
+                
                 <label>Would you recommend our services?</label>
+                <div class="radio-group">
                 <input type="radio" id="yes" name="recommend" value="yes" required>
                 <label for="yes">Yes</label>
+
                 <input type="radio" id="no" name="recommend" value="no">
                 <label for="no">No</label>
+                </div>
         
             </fieldset>
 
@@ -96,9 +99,6 @@
 
         </form>
     </main>
-
-    <a href="#" class="go-to-top" aria-label="Go to top"></a>
-    
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-name">
@@ -153,5 +153,17 @@
         </div>
     </footer>
     
+    <script>
+        function updateCharCount(textareaId, charCountId){
+            const textarea=document.getElementById(textareaId);
+            const charCount=document.getElementById(charCountId);
+            const remaining=250-textarea.value.length;
+            charCount.textContent=`${remaining} characters remaining`;
+        }
+
+        document.getElementById("comment").addEventListener("input",function(){
+            updateCharCount("comment","charCount");
+        });
+    </script>
 </body>
 </html>
