@@ -173,7 +173,7 @@ table:hover {
 
 /* Image Styling */
 .image-holder img {
-    width: 40%;
+    width: 35%;
     height: auto;
     transition: opacity 0.3s ease;
 }
