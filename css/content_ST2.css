@@ -1,16 +1,14 @@
-/* Centered Content for #climate-action-volunteer */
 .container {
-    background: rgba(255, 255, 255, 0.6); /* Transparent white background */
+    background: rgba(255, 255, 255, 0.6); 
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 40px auto;
-    max-width: 1000px; /* Max width for centering */
+    max-width: 1000px; 
     text-align: center;
     line-height: 1.6;
 }
 
-/* Paragraph Styling */
 .container p {
     text-align: center;
     font-size: 1.2em;
@@ -19,7 +17,6 @@
     font-weight: 500;
 }
 
-/* Header Styling */
 .container h1 {
     font-size: 2.5em;
     color: #2c3e50;
@@ -27,7 +24,6 @@
     font-weight: bold;
 }
 
-/* Section Titles */
 .container h2 {
     font-size: 1.8em;
     color: #27ae60;
@@ -46,16 +42,14 @@
     border-bottom: 2px solid #27ae60;
     padding-bottom: 5px;
 }
-/* Paragraph Styling */
+
 .container p {
-    text-align: center;  /* Center the text */
+    text-align: center; 
     font-size: 1.1em;
     color: #34495e;
     margin-bottom: 15px;
 }
 
-
-/* Quick Links Styling */
 .quick-links-container {
     padding: 20px;
     max-width: 100%;
@@ -101,7 +95,6 @@
     transform: scale(1.05);
 }
 
-/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -135,13 +128,11 @@ td {
     color: #333;
 }
 
-/* Hover effect on table rows */
 tr:hover {
     background-color: #000000;
     transform: scale(1.02);
 }
 
-/* Hover effect on cells */
 td:hover{
     background-color: #a0ffa9;
     transform: scale(1.05);
@@ -153,7 +144,6 @@ th:hover {
     transform: scale(1.05);
 }
 
-/* Alternate row colors for better readability */
 tr:nth-child(odd) {
     background-color: #ecf0f1;
 }
@@ -162,7 +152,6 @@ tr:nth-child(even) {
     background-color: #ffffff;
 }
 
-/* Table border animation */
 table {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
@@ -171,7 +160,6 @@ table:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Styling */
 .image-holder img {
     width: 40%;
     height: auto;

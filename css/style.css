@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, h2, p, ul, li, a, table, th, td {
     margin: 0;
     padding: 0;
@@ -7,17 +6,14 @@ body, h1, h2, p, ul, li, a, table, th, td {
     border-collapse: collapse;
 }
 
-/* Apply the hero background to the entire site */
 body {
     font-family: Arial, sans-serif;
     background: url('../images/background.jpg') no-repeat center center/cover;
-    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-attachment: fixed; 
     background-size: cover;
-    color: #141e46; /* Dark Blue text color */
+    color: #141e46; 
 }
 
-/* Navigation Bar Styling */
-/* Updated Header Styles */
 header {
     top: 0;
     width: 100%;
@@ -84,7 +80,6 @@ nav ul li a:hover {
     background: rgba(65, 176, 110, 0.1) !important;
 }
 
-/* Keep the hero section the same */
 .hero {
     height: 450px;
     display: flex;
@@ -103,13 +98,12 @@ nav ul li a:hover {
     justify-content: center;
 
 }
-/* Main Content */
+
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Table Styling */
 table {
     width: 80%;
     margin: 20px auto;
@@ -132,7 +126,6 @@ tr:nth-child(even) {
     background: #f4f4f4;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #000000;
     color: white;
@@ -195,7 +188,6 @@ tr:nth-child(even) {
     font-size: 14px;
 }
 
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -208,7 +200,6 @@ h1, h2 {
     color: #141E46;
 }
 
-/* Header styles */
 header {
     background-color: #41B06E;
     padding: 20px 0;
@@ -248,7 +239,6 @@ header nav ul li a.active {
     border-bottom: 3px solid #8DECB4;
 }
 
-/* Hero section */
 .hero {
     height: 550px;
     background-color: transparent;
@@ -313,7 +303,6 @@ header nav ul li a.active {
     color: rgba(19, 160, 38, 0.884);
 }
 
-/* Add to your CSS file */
 html {
     scroll-behavior: smooth;
 }

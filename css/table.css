@@ -36,7 +36,6 @@ th {
     font-weight: bold;
 }
 
-/* Row Styling */
 tbody tr:nth-child(even) {
     background: #e3fcef;
 }
@@ -46,7 +45,6 @@ tbody tr:hover {
     transition: 0.3s;
 }
 
-/* Icons and Thumbnails */
 .icon {
     font-size: 22px;
     margin-left: 5px;
@@ -82,7 +80,6 @@ tbody tr:hover {
     cursor: help;
 }
 
-/* Data Link Styling */
 .data-link {
     color: #41b06e;
     font-weight: bold;
@@ -98,13 +95,11 @@ tbody tr:hover {
     border-radius: 3px;
 }
 
-/* Table Header */
 .table-header {
     background: linear-gradient(45deg,#41b06e , #141e46) !important;
     padding: 15px !important;
 }
 
-/* Trend Highlighting */
 .trend {
     background: rgba(141, 236, 180, 0.15) !important;
     font-style: italic;
@@ -116,13 +111,11 @@ tbody tr:hover {
     color: #ff3232;
 }
 
-/* Hover Effects */
 tr:hover td:not(.trend) {
     transform: scale(1.02);
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* Animation */
 @keyframes pulse {
     0%, 100% { background-color: normal; }
     50% { background-color: rgba(65, 176, 110, 0.1); }
@@ -132,7 +125,6 @@ tr:hover td:not(.trend) {
     animation: pulse 2s infinite;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     table { width: 100%; }
     th, td { font-size: 14px; padding: 12px; }

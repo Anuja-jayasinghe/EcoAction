@@ -26,7 +26,6 @@
         </nav>
     </header>
 
-    <!-- Scrollable Information Section -->
     <section class="volunteer-section">
         <section id="climate-action-volunteer" class="info-box">
             <h2 style="font-size: 40px;">Volunteer for Climate Action</h2>
@@ -80,7 +79,7 @@
         </div>
 
         <div class="program-cards" id="programCards">
-            <!-- Cards will be dynamically sorted and filtered here -->
+
             <div class="card" data-price="1045" data-duration="3" data-popularity="3">
                 <img src="../images/volunteer/card1.jpg" alt="Marine Conservation">
                 <h3>Marine Conservation</h3>
@@ -165,15 +164,12 @@
             </div>
         </div>
     
-        <!-- Button Container -->
         <div class="button-container">
             <button id="seemorereviews">See More Reviews</button>
         </div>
     </div>
     
     
-
-    <!-- Feedback Form -->
     <section class="feedback-form">
         <h2>Give Us Your Feedback</h2>
         <form>
@@ -252,14 +248,13 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Filtering, Sorting, and Interactivity -->
     <script>
         const sortingDropdown = document.getElementById('sorting');
         const filterDropdown = document.getElementById('filter-duration');
         const programCards = document.getElementById('programCards');
         const cards = Array.from(document.querySelectorAll('.card'));
 
-        // Event Listeners
+
         sortingDropdown.addEventListener('change', sortAndFilterCards);
         filterDropdown.addEventListener('change', sortAndFilterCards);
 
@@ -269,19 +264,19 @@
 
             let filteredCards = cards;
 
-            // Filter cards based on duration
+
             if (filterValue !== "all") {
                 filteredCards = cards.filter(card => card.dataset.duration === filterValue);
             }
 
-            // Sort the filtered cards
+
             filteredCards.sort((a, b) => {
                 const aValue = parseInt(a.dataset[sortCriteria]);
                 const bValue = parseInt(b.dataset[sortCriteria]);
                 return aValue - bValue;
             });
 
-            // Clear and update the program cards section
+
             programCards.innerHTML = '';
             filteredCards.forEach(card => programCards.appendChild(card));
         }

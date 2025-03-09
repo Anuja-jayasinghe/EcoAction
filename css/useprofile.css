@@ -1,4 +1,3 @@
-/* Global Styles */
 :root {
     --primary-color: #2e8b57;
     --secondary-color: #3cb371;
@@ -71,7 +70,6 @@ profilecontent{
     width: 80%;
 }
 
-/* Card Styles */
 .card {
     background-color: #fff;
     border-radius: var(--border-radius);
@@ -87,7 +85,6 @@ profilecontent{
     box-shadow: var(--hover-shadow);
 }
 
-/* Profile Card Styles */
 .profile-card {
     background-color: #fff;
     border-radius: var(--border-radius);
@@ -146,7 +143,6 @@ profilecontent{
     color: var(--secondary-color);
 }
 
-/* Skills Section */
 .skills-card {
     background-color: #fff;
     align-items: center;
@@ -186,7 +182,6 @@ profilecontent{
     text-align: right;
 }
 
-/* Experience List */
 .experience-list {
     list-style: none;
 }
@@ -202,7 +197,6 @@ profilecontent{
     margin-bottom: 5px;
 }
 
-/* UN Goals and Activities Sections */
 .goals-grid, .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -226,7 +220,6 @@ profilecontent{
     margin-bottom: 10px;
 }
 
-/* Calendar Section */
 .calendar-section {
     background-color: #fff;
 }
@@ -253,7 +246,6 @@ profilecontent{
     background-color: var(--accent-color);
 }
 
-/* Contact Form Section */
 .contact-form {
     display: flex;
     flex-direction: column;

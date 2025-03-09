@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
     --primary-color: #2e8b57;
     --secondary-color: #3cb371;
@@ -36,7 +36,6 @@ body {
     padding: 20px;
 }
 
-/* Main Content Styles */
 main {
     padding: 20px 0;
 }
@@ -47,7 +46,7 @@ main {
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: var(--card-shadow);
-    position: relative; /* For positioning the preview container */
+    position: relative; 
 }
 
 h1 {
@@ -62,7 +61,6 @@ h1 {
     color: var(--dark-gray);
 }
 
-/* SVG Container Styles */
 .svg-container {
     width: 100%;
     height: auto;
@@ -78,7 +76,6 @@ svg {
     border: 1px solid var(--medium-gray);
 }
 
-/* SVG Element Styles */
 .connector {
     stroke: var(--connector-color);
     stroke-width: 2;
@@ -97,7 +94,7 @@ svg {
     font-size: 14px;
     fill: var(--text-color);
     font-weight: 500;
-    pointer-events: none; /* Makes text not interfere with click events */
+    pointer-events: none; 
 }
 
 .home-node rect {
@@ -116,14 +113,13 @@ svg {
     fill: var(--node-fill);
 }
 
-/* Interactive Styles */
+
 .node-link:hover .node rect {
     fill: var(--node-hover);
     stroke: var(--primary-color);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-/* For keyboard navigation */
 .node-link:focus {
     outline: none;
 }
@@ -135,7 +131,6 @@ svg {
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
 }
 
-/* Preview Container Styles */
 .preview-container {
     position: fixed;
     z-index: 1000;
@@ -144,7 +139,7 @@ svg {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     padding: 10px;
-    pointer-events: none; /* Allows mouse events to pass through */
+    pointer-events: none; 
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -174,7 +169,6 @@ svg {
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .main-menu {
         flex-direction: column;
@@ -188,19 +182,16 @@ svg {
     .svg-container {
         overflow-x: auto;
     }
-    
-    /* Adjust sitemap visibility on smaller screens */
+
     #sitemap {
-        min-width: 800px; /* Ensure minimum width to prevent excessive compression */
+        min-width: 800px; 
     }
-    
-    /* Make preview smaller on mobile */
+
     .preview-container {
         width: 200px;
     }
 }
 
-/* Ensure accessibility */
 .node-link:focus-visible .node rect {
     outline: 3px solid var(--primary-color);
     outline-offset: 2px;

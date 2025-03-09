@@ -223,7 +223,6 @@
             const previewImage = document.getElementById('preview-image');
             const previewTitle = document.getElementById('preview-title');
             
-            // Show preview on hover
             nodeLinks.forEach(node => {
                 if (node.hasAttribute('data-preview')) {
                     node.addEventListener('mouseenter', function() {
@@ -233,37 +232,31 @@
                         previewImage.src = previewSrc;
                         previewTitle.textContent = pageName;
                         previewContainer.classList.add('visible');
-                        
-                        // Update position to follow cursor
+
                         document.addEventListener('mousemove', updatePreviewPosition);
                     });
                     
                     node.addEventListener('mouseleave', function() {
                         previewContainer.classList.remove('visible');
-                        // Remove the event listener when not hovering
                         document.removeEventListener('mousemove', updatePreviewPosition);
                     });
                 }
             });
             
-            // Function to update preview position
             function updatePreviewPosition(e) {
                 const x = e.clientX;
                 const y = e.clientY;
-                const buffer = 20; // Space between cursor and preview
-                
-                // Check if we're on the right side of the screen
+                const buffer = 20; 
+
                 const rightSide = x > window.innerWidth / 2;
                 
                 if (rightSide) {
-                    // Position to the left of cursor
                     previewContainer.style.left = (x - previewContainer.offsetWidth - buffer) + 'px';
                 } else {
-                    // Position to the right of cursor
+
                     previewContainer.style.left = (x + buffer) + 'px';
                 }
-                
-                // Adjust vertical position to avoid going off-screen
+
                 let topPosition = y - previewContainer.offsetHeight / 2;
                 if (topPosition < 10) topPosition = 10;
                 if (topPosition + previewContainer.offsetHeight > window.innerHeight - 10) {
