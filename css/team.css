@@ -31,7 +31,7 @@
 }
 
 .image-box{
-    width: 80%;
+    width: 100%;
     height: 260px;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@
 
 .thumbnail:hover{
     opacity: 0.8;
-    border: 2px solid #ffffff;
+    border: 2px solid #41b06e;
 }
 
 .details{
@@ -83,32 +83,20 @@ main{
     flex-grow: 1;
 }
 
-footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
 
-h2{
+
+#title1{
     margin-top: 20px;
     margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+    color: lightyellow;
     font-size: 45px;
     font-family: sans-serif;
     }
 
-p{
-    font-size: 16px;
-    font-family: sans-serif;
-    color: rgb(18, 52, 18);
-}
+
 
 .subtitle{
-    color: rgb(255, 255, 255);
+    color: lightyellow;
     font-size: 30px;
     margin-bottom: 0;
 }
