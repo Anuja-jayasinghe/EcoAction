@@ -171,69 +171,6 @@ table:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Styles */
-.footer {
-    background-color: #000000;
-    color: white;
-    padding-top: 30px;
-    font-size: 16px;
-    text-align: center;
-}
-#footer-text {
-    color: white;}
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.link-section {
-    flex: 1 1 200px;
-    margin: 10px;
-}
-
-.link-section h4 {
-    border-bottom: 2px solid #41b06e;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.link-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.link-section ul li {
-    margin: 5px 0;
-}
-
-.link-section ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.link-section ul li a:hover {
-    color: #41b06e;
-}
-
-.footer-bottom {
-    background-color: #000000;
-    padding: 15px 0;
-    font-size: 14px;
-}
-
 /* Image Styling */
 .image-holder img {
     width: 40%;
