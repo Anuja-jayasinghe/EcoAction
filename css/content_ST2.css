@@ -6,13 +6,13 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 40px auto;
     max-width: 1000px; /* Max width for centering */
-    text-align: center; /* Center the text */
+    text-align: center;
     line-height: 1.6;
 }
 
 /* Paragraph Styling */
 .container p {
-    text-align: center;  /* Center the text */
+    text-align: center;
     font-size: 1.2em;
     color: #192735;
     margin-bottom: 15px;

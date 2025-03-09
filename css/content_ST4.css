@@ -1,18 +1,18 @@
 /* Centered Content for #climate-action-volunteer */
 .container {
-    background: rgba(255, 255, 255, 0.6); /* Transparent white background */
+    background: rgba(255, 255, 255, 0.6);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 40px auto;
-    max-width: 1000px; /* Max width for centering */
-    text-align: center; /* Center the text */
+    max-width: 1000px;
+    text-align: center; 
     line-height: 1.6;
 }
 
 /* Paragraph Styling */
 .container p {
-    text-align: center;  /* Center the text */
+    text-align: center;
     font-size: 1.2em;
     color: #192735;
     margin-bottom: 15px;
