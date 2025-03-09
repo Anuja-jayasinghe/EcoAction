@@ -41,6 +41,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('../images/editor-background.jpg') repeat-y center center fixed;
+    background-size: 100%; 
 }
 
 .container {
@@ -64,9 +66,16 @@ section {
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd;
-    background-color: #fafafa;
+    background-color: rgba(176, 255, 176, 0.5); /* Light hint of green with transparency */
 }
 
+section, aside {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: rgba(176, 255, 176, 0.5); /* Light hint of green with transparency */
+    box-shadow: 0 4px 8px rgba(176, 255, 176, 0.5); /* Matching light hint of green shadow */
+}
 
 .ref li{
     list-style: none;
