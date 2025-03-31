@@ -1,0 +1,1 @@
+EcoAction is a collaborative web design and development project undertaken as part of an academic assessment. The project is structured to facilitate contributions from multiple students, each responsible for specific sections of the website.
